@@ -33,7 +33,7 @@ export default function About({ t }) {
               <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-lg card-zoom border-2 border-cream-100">
                 <img
                   src="/images/gelato/about_2.jpg"
-                  alt="Pistatxo pur de Sicília"
+                  alt="Obrador artesà Al Bacio a Bunyol"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
