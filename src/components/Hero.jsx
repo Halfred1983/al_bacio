@@ -1,65 +1,86 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ChevronDown, Sparkles, ArrowRight } from 'lucide-react';
 
 export default function Hero({ t }) {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.defaultMuted = true;
+      videoRef.current.muted = true;
+      videoRef.current.play().catch(() => {
+        // Autoplay may be deferred until user interaction on power-saving modes
+      });
+    }
+  }, []);
+
   return (
     <section
       id="inici"
-      className="relative min-h-screen flex flex-col justify-center items-center text-center px-4 sm:px-6 overflow-hidden bg-cacao-900"
+      className="relative w-full h-screen min-h-screen flex flex-col justify-center items-center text-center px-4 sm:px-6 overflow-hidden bg-cacao-900"
     >
-      {/* Immersive Background Image with Dark Vignette (Frigidarium style) */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="/images/gelato/hero_gelato.jpg"
-          alt="Helado artesanal italiano Al Bacio"
-          className="w-full h-full object-cover opacity-35 scale-105 transform animate-fadeIn duration-1000"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-cacao-900 via-cacao-900/60 to-cacao-900/80" />
+      {/* Full-Screen Looping Muted Video Background */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <video
+          ref={videoRef}
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/images/gelato/hero_gelato.jpg"
+          className="w-full h-full object-cover scale-105"
+        >
+          <source src="/videos/trim.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        {/* Dark Overlay for Text Readability */}
+        <div className="absolute inset-0 bg-black/60 sm:bg-black/55 bg-gradient-to-b from-cacao-900/70 via-black/40 to-cacao-900/85 backdrop-brightness-[0.8]" />
       </div>
 
-      {/* Foreground Content */}
-      <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center pt-16 pb-12">
+      {/* Foreground Content: Centered Heading & Call-to-Action */}
+      <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center pt-12 pb-8">
         
         {/* Official Logo Emblem */}
-        <div className="mb-6 transform hover:scale-105 transition-transform duration-500">
+        <div className="mb-5 transform hover:scale-105 transition-transform duration-500">
           <img
             src="/images/logo.png"
             alt="Gelateria Artigianale Al Bacio"
-            className="w-64 sm:w-80 md:w-96 h-auto object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]"
+            className="w-56 sm:w-72 md:w-80 h-auto object-contain drop-shadow-[0_10px_25px_rgba(0,0,0,0.7)]"
           />
         </div>
 
         {/* Location Badge */}
-        <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-1.5 mb-5 text-[11px] uppercase tracking-[0.25em] text-caramel-300 font-semibold">
+        <div className="inline-flex items-center space-x-2 bg-white/15 backdrop-blur-md border border-white/25 rounded-full px-4 py-1.5 mb-5 text-[11px] uppercase tracking-[0.25em] text-caramel-300 font-semibold shadow-md">
           <Sparkles className="w-3.5 h-3.5 text-caramel-400" />
           <span>{t.hero.badge}</span>
         </div>
 
-        {/* Separator Line (Frigidarium signature) */}
-        <div className="w-24 h-0.5 bg-caramel-400/80 mb-6 rounded-full" />
+        {/* Separator Line */}
+        <div className="w-20 h-0.5 bg-caramel-400/90 mb-5 rounded-full shadow" />
 
-        {/* Official Slogan Requested by User */}
-        <h1 className="font-serif italic text-2xl sm:text-4xl md:text-5xl font-medium text-cream-50 leading-snug max-w-3xl mb-4 tracking-tight drop-shadow-md">
+        {/* Centered Heading (Official Slogan) */}
+        <h1 className="font-serif italic text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-cream-50 leading-snug max-w-3xl mb-4 tracking-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.8)]">
           "{t.hero.slogan}"
         </h1>
 
         {/* Subtitle */}
-        <p className="text-sm sm:text-base text-cream-200/90 max-w-xl font-light leading-relaxed mb-8">
+        <p className="text-sm sm:text-base md:text-lg text-cream-100/95 max-w-xl font-light leading-relaxed mb-8 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
           {t.hero.subtitle}
         </p>
 
-        {/* Action Button (Frigidarium button style) */}
+        {/* Centered Call-to-Action Buttons */}
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <a
             href="#gelats"
-            className="inline-flex items-center space-x-2 bg-terracotta-500 hover:bg-terracotta-600 text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-[0.18em] shadow-lg hover:shadow-xl transition-all"
+            className="inline-flex items-center space-x-2 bg-terracotta-500 hover:bg-terracotta-600 text-white px-8 sm:px-9 py-3.5 sm:py-4 rounded-full text-xs font-bold uppercase tracking-[0.2em] shadow-[0_8px_25px_rgba(194,89,56,0.45)] hover:shadow-2xl hover:scale-105 active:scale-95 transition-all"
           >
             <span>{t.hero.exploreBtn}</span>
             <ArrowRight className="w-4 h-4" />
           </a>
           <a
             href="#historia"
-            className="inline-flex items-center space-x-2 bg-transparent hover:bg-white/10 border border-white/40 text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-[0.18em] transition-all"
+            className="inline-flex items-center space-x-2 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/40 text-white px-8 py-3.5 sm:py-4 rounded-full text-xs font-bold uppercase tracking-[0.2em] hover:scale-105 active:scale-95 transition-all"
           >
             <span>{t.nav.story}</span>
           </a>
@@ -70,7 +91,7 @@ export default function Hero({ t }) {
       {/* Frigidarium Down-Arrow Pagination Button */}
       <a
         href="#historia"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/80 hover:text-caramel-400 flex flex-col items-center group transition-colors"
+        className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 text-white/80 hover:text-caramel-400 flex flex-col items-center group transition-colors z-10"
         aria-label="Següent secció"
       >
         <span className="text-[10px] uppercase tracking-[0.25em] mb-1 font-semibold opacity-75 group-hover:opacity-100">
