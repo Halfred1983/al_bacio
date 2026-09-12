@@ -24,7 +24,7 @@ export default function About({ t }) {
               </div>
               <div className="p-3 bg-cream-50 rounded-2xl border border-cream-200 text-center">
                 <span className="text-[11px] font-bold uppercase tracking-wider text-cacao-800">
-                  Cucurutxos artesans
+                  {t.about.conesBadge}
                 </span>
               </div>
             </div>
@@ -40,7 +40,7 @@ export default function About({ t }) {
               </div>
               <div className="p-3 bg-cream-50 rounded-2xl border border-cream-200 text-center">
                 <span className="text-[11px] font-bold uppercase tracking-wider text-cacao-800">
-                  Obrador a Bunyol
+                  {t.about.workshopBadge}
                 </span>
               </div>
             </div>

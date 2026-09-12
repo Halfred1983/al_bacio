@@ -25,6 +25,8 @@ export const translations = {
       quote: "Al Bacio significa fet amb mestria i perfecció.",
       author: "Diego Salvati · Mestre Gelater",
       button: "Descobreix la nostra carta",
+      conesBadge: "Cucurutxos artesans",
+      workshopBadge: "Obrador a Bunyol",
     },
     craft: {
       badge: "Filosofia de l'Obrador",
@@ -121,6 +123,8 @@ export const translations = {
       quote: "Al Bacio significa hecho con maestría y perfección.",
       author: "Diego Salvati · Maestro Heladero",
       button: "Descubre nuestra carta",
+      conesBadge: "Cucuruchos artesanales",
+      workshopBadge: "Obrador en Buñol",
     },
     craft: {
       badge: "Filosofía del Obrador",
