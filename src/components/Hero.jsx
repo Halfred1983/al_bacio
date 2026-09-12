@@ -1,93 +1,84 @@
-import React, { useState, useEffect } from 'react';
-import { ArrowDown, Sparkles, ChevronRight, Clock } from 'lucide-react';
+import React from 'react';
+import { ChevronDown, Sparkles, ArrowRight } from 'lucide-react';
 
 export default function Hero({ t }) {
-  const [activeSlide, setActiveSlide] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveSlide((prev) => (prev + 1) % t.hero.manifesto.length);
-    }, 4500);
-    return () => clearInterval(timer);
-  }, [t.hero.manifesto.length]);
-
   return (
-    <section className="relative min-h-[92vh] flex items-center justify-center pt-24 pb-16 overflow-hidden">
-      {/* Background Graphic Elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-cream-100/70 via-cream-50/50 to-cream-50 pointer-events-none" />
-      
-      {/* Subtle Warm Glow Orbs */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[550px] h-[550px] bg-caramel-400/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-10 w-[350px] h-[350px] bg-terracotta-500/10 rounded-full blur-3xl pointer-events-none" />
+    <section
+      id="inici"
+      className="relative min-h-screen flex flex-col justify-center items-center text-center px-4 sm:px-6 overflow-hidden bg-cacao-900"
+    >
+      {/* Immersive Background Image with Dark Vignette (Frigidarium style) */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=2000&q=85"
+          alt="Helado artesanal italiano Al Bacio"
+          className="w-full h-full object-cover opacity-35 scale-105 transform animate-fadeIn duration-1000"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-cacao-900 via-cacao-900/60 to-cacao-900/80" />
+      </div>
 
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 text-center z-10 flex flex-col items-center">
+      {/* Foreground Content */}
+      <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center pt-16 pb-12">
         
-        {/* Editorial Sub-badge */}
-        <div className="inline-flex items-center space-x-2 bg-cream-100 border border-cream-200/90 rounded-full px-4 py-1.5 mb-6 text-xs uppercase tracking-widest text-cacao-700 font-medium shadow-2xs">
-          <Sparkles className="w-3.5 h-3.5 text-caramel-500" />
+        {/* Official Logo Emblem */}
+        <div className="mb-6 transform hover:scale-105 transition-transform duration-500">
+          <img
+            src="/images/logo.png"
+            alt="Gelateria Artigianale Al Bacio"
+            className="w-64 sm:w-80 md:w-96 h-auto object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]"
+          />
+        </div>
+
+        {/* Location Badge */}
+        <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-1.5 mb-5 text-[11px] uppercase tracking-[0.25em] text-caramel-300 font-semibold">
+          <Sparkles className="w-3.5 h-3.5 text-caramel-400" />
           <span>{t.hero.badge}</span>
         </div>
 
-        {/* Main Title */}
-        <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-semibold tracking-tight text-cacao-900 leading-[1.1] mb-6 max-w-4xl">
-          {t.hero.title}
+        {/* Separator Line (Frigidarium signature) */}
+        <div className="w-24 h-0.5 bg-caramel-400/80 mb-6 rounded-full" />
+
+        {/* Official Slogan Requested by User */}
+        <h1 className="font-serif italic text-2xl sm:text-4xl md:text-5xl font-medium text-cream-50 leading-snug max-w-3xl mb-4 tracking-tight drop-shadow-md">
+          "{t.hero.slogan}"
         </h1>
 
         {/* Subtitle */}
-        <p className="text-base sm:text-xl text-cacao-700/90 max-w-2xl font-light leading-relaxed mb-10">
+        <p className="text-sm sm:text-base text-cream-200/90 max-w-xl font-light leading-relaxed mb-8">
           {t.hero.subtitle}
         </p>
 
-        {/* Rotating Editorial Manifesto (DeLaCrem style) */}
-        <div className="w-full max-w-2xl bg-cream-100/90 backdrop-blur-xs border border-cream-200 rounded-2xl p-6 sm:p-7 mb-10 shadow-sm relative transition-all">
-          <div className="text-xs uppercase tracking-widest text-terracotta-600 font-bold mb-2">
-            Manifesto Artigianale
-          </div>
-          <div className="min-h-[50px] flex items-center justify-center">
-            <p className="font-serif italic text-lg sm:text-2xl text-cacao-800 transition-opacity duration-500">
-              "{t.hero.manifesto[activeSlide]}"
-            </p>
-          </div>
-          <div className="flex justify-center space-x-2 mt-4">
-            {t.hero.manifesto.map((_, idx) => (
-              <button
-                key={idx}
-                onClick={() => setActiveSlide(idx)}
-                className={`h-1.5 rounded-full transition-all duration-300 ${
-                  activeSlide === idx ? 'w-8 bg-terracotta-500' : 'w-2 bg-cream-300'
-                }`}
-                aria-label={`Slide ${idx + 1}`}
-              />
-            ))}
-          </div>
-        </div>
-
-        {/* Call to Actions */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+        {/* Action Button (Frigidarium button style) */}
+        <div className="flex flex-col sm:flex-row items-center gap-4">
           <a
-            href="#sabors"
-            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-cacao-900 hover:bg-cacao-800 text-white px-8 py-3.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all shadow hover:shadow-md"
+            href="#gelats"
+            className="inline-flex items-center space-x-2 bg-terracotta-500 hover:bg-terracotta-600 text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-[0.18em] shadow-lg hover:shadow-xl transition-all"
           >
             <span>{t.hero.exploreBtn}</span>
-            <ChevronRight className="w-4 h-4" />
+            <ArrowRight className="w-4 h-4" />
           </a>
           <a
             href="#historia"
-            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-transparent hover:bg-cream-100 border border-cacao-800/30 text-cacao-800 px-8 py-3.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all"
+            className="inline-flex items-center space-x-2 bg-transparent hover:bg-white/10 border border-white/40 text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-[0.18em] transition-all"
           >
-            <span>{t.hero.storyBtn}</span>
+            <span>{t.nav.story}</span>
           </a>
         </div>
 
       </div>
 
-      {/* Down indicator */}
+      {/* Frigidarium Down-Arrow Pagination Button */}
       <a
         href="#historia"
-        className="absolute bottom-4 left-1/2 -translate-x-1/2 text-cacao-500 hover:text-terracotta-500 transition-colors p-2"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/80 hover:text-caramel-400 flex flex-col items-center group transition-colors"
         aria-label="Següent secció"
       >
-        <ArrowDown className="w-5 h-5 animate-bounce" />
+        <span className="text-[10px] uppercase tracking-[0.25em] mb-1 font-semibold opacity-75 group-hover:opacity-100">
+          {t.hero.scrollDown}
+        </span>
+        <div className="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center group-hover:border-caramel-400 transition-colors animate-bounce">
+          <ChevronDown className="w-5 h-5" />
+        </div>
       </a>
     </section>
   );

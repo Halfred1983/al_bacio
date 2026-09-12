@@ -1,63 +1,107 @@
 import React from 'react';
-import { Leaf, ShieldCheck, HeartHandshake, Sparkles } from 'lucide-react';
+import { ChevronDown, Check, ArrowRight, Sparkles } from 'lucide-react';
 
 export default function Philosophy({ t }) {
-  const icons = [Sparkles, Leaf, ShieldCheck, HeartHandshake];
-
   return (
-    <section id="filosofia" className="py-24 bg-cream-50 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      id="filosofia"
+      className="min-h-screen flex flex-col justify-center relative py-20 bg-cream-50/70 border-b border-cream-200/80"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full my-auto">
         
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold uppercase tracking-widest text-terracotta-600 block mb-3">
-            {t.philosophy.tag}
-          </span>
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-cacao-900 tracking-tight mb-5">
-            {t.philosophy.title}
-          </h2>
-          <p className="text-base sm:text-lg text-cacao-700 font-light leading-relaxed">
-            {t.philosophy.subtitle}
-          </p>
-        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          {/* Text & Content Column */}
+          <div className="lg:col-span-6 flex flex-col items-center lg:items-start text-center lg:text-left order-2 lg:order-1">
+            
+            <div className="inline-flex items-center space-x-2 text-xs font-bold uppercase tracking-[0.25em] text-terracotta-600 mb-2">
+              <Sparkles className="w-3.5 h-3.5 text-caramel-500" />
+              <span>{t.craft.badge}</span>
+            </div>
 
-        {/* 4 Pillars Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {t.philosophy.pillars.map((pillar, index) => {
-            const IconComponent = icons[index % icons.length];
-            return (
-              <div
-                key={index}
-                className="bg-white/80 backdrop-blur-xs border border-cream-200/90 rounded-3xl p-8 hover:shadow-lg transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1"
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-6">
-                    <span className="font-serif text-3xl font-bold text-caramel-500/70 group-hover:text-terracotta-500 transition-colors">
-                      {pillar.num}
-                    </span>
-                    <div className="p-2.5 rounded-2xl bg-cream-100 text-cacao-800 group-hover:bg-terracotta-500 group-hover:text-white transition-colors">
-                      <IconComponent className="w-5 h-5" />
-                    </div>
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-cacao-900 tracking-tight leading-tight mb-4">
+              {t.craft.title}
+            </h2>
+
+            {/* Separator */}
+            <div className="w-20 h-0.5 bg-caramel-500 mb-6 rounded-full" />
+
+            <p className="text-sm sm:text-base text-cacao-700 font-light leading-relaxed mb-6 max-w-lg">
+              {t.craft.description}
+            </p>
+
+            {/* Feature List */}
+            <div className="space-y-3 mb-8 w-full max-w-md text-left">
+              {t.craft.features.map((feat, index) => (
+                <div key={index} className="flex items-center space-x-3 bg-white p-3 rounded-2xl border border-cream-200 shadow-2xs">
+                  <div className="w-6 h-6 rounded-full bg-pistachio-100 flex items-center justify-center shrink-0">
+                    <Check className="w-3.5 h-3.5 text-pistachio-600 stroke-[3]" />
                   </div>
-
-                  <h3 className="font-serif text-xl font-bold text-cacao-900 mb-3 group-hover:text-terracotta-600 transition-colors">
-                    {pillar.title}
-                  </h3>
-
-                  <p className="text-sm text-cacao-700 font-light leading-relaxed">
-                    {pillar.desc}
-                  </p>
+                  <span className="text-xs sm:text-sm font-medium text-cacao-800">
+                    {feat}
+                  </span>
                 </div>
+              ))}
+            </div>
 
-                <div className="mt-6 pt-4 border-t border-cream-100 flex items-center text-xs font-semibold text-terracotta-600 uppercase tracking-wider">
-                  <span>Al Bacio Qualitat</span>
-                </div>
+            {/* Button */}
+            <a
+              href="#gelats"
+              className="inline-flex items-center space-x-2 bg-terracotta-500 hover:bg-terracotta-600 text-white px-7 py-3 rounded-full text-xs font-bold uppercase tracking-[0.18em] shadow transition-all"
+            >
+              <span>{t.craft.button}</span>
+              <ArrowRight className="w-4 h-4" />
+            </a>
+
+          </div>
+
+          {/* Photos Column (Frigidarium 2-column portrait gallery style) */}
+          <div className="lg:col-span-6 grid grid-cols-2 gap-4 sm:gap-6 order-1 lg:order-2">
+            <div className="space-y-4 pt-8 sm:pt-12">
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-lg card-zoom border-2 border-white">
+                <img
+                  src="https://images.unsplash.com/photo-1580915411954-282cb1b0d780?auto=format&fit=crop&w=800&q=85"
+                  alt="Casa Baltar Dulce de Leche"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
-            );
-          })}
+              <div className="p-3 bg-white rounded-2xl border border-cream-200 text-center shadow-2xs">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-cacao-800">
+                  Casa Baltar Astúries
+                </span>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-lg card-zoom border-2 border-white">
+                <img
+                  src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=85"
+                  alt="Mantecat artesanal"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="p-3 bg-white rounded-2xl border border-cream-200 text-center shadow-2xs">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-cacao-800">
+                  Elaboració diària
+                </span>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
+
+      {/* Down arrow to next section */}
+      <a
+        href="#gelats"
+        className="absolute bottom-4 left-1/2 -translate-x-1/2 text-cacao-400 hover:text-terracotta-600 p-2 transition-colors"
+        aria-label="Següent secció"
+      >
+        <ChevronDown className="w-5 h-5 animate-bounce" />
+      </a>
     </section>
   );
 }
