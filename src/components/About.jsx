@@ -16,7 +16,7 @@ export default function About({ t }) {
             <div className="space-y-4">
               <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-lg card-zoom border-2 border-cream-100">
                 <img
-                  src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=800&q=85"
+                  src="/images/gelato/about_1.jpg"
                   alt="Gelat artesanal Al Bacio"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -32,7 +32,7 @@ export default function About({ t }) {
             <div className="space-y-4 pt-8 sm:pt-12">
               <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-lg card-zoom border-2 border-cream-100">
                 <img
-                  src="https://images.unsplash.com/photo-1560008581-09826d1de69e?auto=format&fit=crop&w=800&q=85"
+                  src="/images/gelato/about_2.jpg"
                   alt="Pistatxo pur de Sicília"
                   className="w-full h-full object-cover"
                   loading="lazy"

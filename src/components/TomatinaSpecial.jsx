@@ -15,7 +15,7 @@ export default function TomatinaSpecial({ t }) {
             {/* Image Column */}
             <div className="lg:col-span-6 relative min-h-[360px] lg:min-h-full card-zoom">
               <img
-                src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=1200&q=85"
+                src="/images/gelato/tomatina.jpg"
                 alt="Gelat La Tomatina de Bunyol"
                 className="w-full h-full object-cover"
                 loading="lazy"

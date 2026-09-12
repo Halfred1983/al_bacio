@@ -12,7 +12,7 @@ export const products = [
       es: "100% grano de pistacho de Sicilia tostado a fuego lento. Textura sedosa y sabor intenso."
     },
     dietary: ["senseGluten"],
-    image: "https://images.unsplash.com/photo-1560008581-09826d1de69e?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/gelato/pistacchio.jpg",
     badge: {
       ca: "El Clàssic",
       es: "El Clásico"
@@ -30,7 +30,7 @@ export const products = [
       es: "Chocolate noble con pasta pura de avellana de Piamonte y trozos de avellana crujiente."
     },
     dietary: ["senseGluten"],
-    image: "https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/gelato/bacio.jpg",
     badge: {
       ca: "Especialitat Al Bacio",
       es: "Especialidad Al Bacio"
@@ -48,7 +48,7 @@ export const products = [
       es: "Colaboración exclusiva con Casa Baltar. Elaborado con leche fresca de las praderas de Asturias."
     },
     dietary: ["senseGluten", "proximitat"],
-    image: "https://images.unsplash.com/photo-1580915411954-282cb1b0d780?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/gelato/dulce_de_leche.jpg",
     badge: {
       ca: "Casa Baltar",
       es: "Casa Baltar"
@@ -66,7 +66,7 @@ export const products = [
       es: "La pureza de la leche entera fresca y la nata. El sabor más limpio de la tradición italiana."
     },
     dietary: ["senseGluten"],
-    image: "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/gelato/fior_di_latte.jpg",
     badge: {
       ca: "Pura Llet",
       es: "Pura Leche"
@@ -84,7 +84,7 @@ export const products = [
       es: "Base cremosa de fior di latte con hilos de chocolate negro crujiente fundido a mano."
     },
     dietary: ["senseGluten"],
-    image: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/gelato/stracciatella.jpg",
     badge: {
       ca: "Tradicional",
       es: "Tradicional"
@@ -104,7 +104,7 @@ export const products = [
       es: "Elaborado con zumo de limón natural exprimido al día. Refrescante, vivo y digestivo."
     },
     dietary: ["senseGluten", "vegat"],
-    image: "https://images.unsplash.com/photo-1505394033641-40c6ad1178d7?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/gelato/sorbet_llima.jpg",
     badge: {
       ca: "100% Fruita",
       es: "100% Fruta"
@@ -122,7 +122,7 @@ export const products = [
       es: "Altísimo porcentaje de fruta seleccionada. Dulzor natural sin colorantes ni conservantes."
     },
     dietary: ["senseGluten", "vegat"],
-    image: "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/gelato/sorbet_maduixa.jpg",
     badge: {
       ca: "100% Vegà",
       es: "100% Vegano"
@@ -140,7 +140,7 @@ export const products = [
       es: "Textura increíblemente suave con el contraste vibrante del maracuyá fresco."
     },
     dietary: ["senseGluten", "vegat"],
-    image: "https://images.unsplash.com/photo-1576506295286-5cda18df43e7?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/gelato/sorbet_mango.jpg",
     badge: {
       ca: "Exòtic",
       es: "Exótico"
@@ -160,7 +160,7 @@ export const products = [
       es: "Intensidad pura de cacao noble, endulzado suavemente para cuidarse disfrutando."
     },
     dietary: ["senseGluten", "senseSucre"],
-    image: "https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/gelato/xocolata_sense_sucre.jpg",
     badge: {
       ca: "Sense Sucre",
       es: "Sin Azúcar"
@@ -178,7 +178,7 @@ export const products = [
       es: "Toda la cremosidad y el tostado característico de la avellana IGP sin azúcares añadidos."
     },
     dietary: ["senseGluten", "senseSucre"],
-    image: "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/gelato/avellana_sense_sucre.jpg",
     badge: {
       ca: "Lleuger",
       es: "Ligero"
@@ -198,7 +198,7 @@ export const products = [
       es: "El exclusivo homenaje a la fiesta de Buñol elaborado con tomate local. Protagonista en À Punt Mèdia."
     },
     dietary: ["senseGluten", "vegat", "proximitat"],
-    image: "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/gelato/tomatina.jpg",
     badge: {
       ca: "Orgull de Bunyol",
       es: "Orgullo de Buñol"
@@ -218,7 +218,7 @@ export const products = [
       es: "Yogur natural batido frío, acompañado con tu crema templada y toppings crujientes favoritos."
     },
     dietary: ["senseGluten"],
-    image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/gelato/frozen_yogurt.jpg",
     badge: {
       ca: "Artesà",
       es: "Artesano"
@@ -238,7 +238,7 @@ export const products = [
       es: "Bola de helado artesano fior di latte bañada al momento con un espresso italiano de especialidad."
     },
     dietary: ["senseGluten"],
-    image: "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/gelato/affogato.jpg",
     badge: {
       ca: "Cafè Italià",
       es: "Café Italiano"
@@ -256,7 +256,7 @@ export const products = [
       es: "Elaborada al día con chufa valenciana y granizados naturales de limón recién exprimido."
     },
     dietary: ["senseGluten", "vegat", "proximitat"],
-    image: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/gelato/orxata.jpg",
     badge: {
       ca: "Tradició",
       es: "Tradición"
@@ -268,7 +268,7 @@ export const instagramPosts = [
   {
     id: "C_Hq7gMtL5r",
     url: "https://www.instagram.com/p/C_Hq7gMtL5r/",
-    image: "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=900&q=85",
+    image: "/images/gelato/instagram_1.jpg",
     caption: {
       ca: "🍅 ¡La Tomatina, ara també en gelat! Gràcies a @apunt_media per visitar-nos i donar veu al nostre gelat dedicat a Bunyol.",
       es: "🍅 ¡La Tomatina, ahora también en helado! Gracias a @apunt_media por visitarnos y dar voz a nuestro nuevo helado dedicado a Buñol."
@@ -279,7 +279,7 @@ export const instagramPosts = [
   {
     id: "C9k6YwNtM_z",
     url: "https://www.instagram.com/p/C9k6YwNtM_z/",
-    image: "https://images.unsplash.com/photo-1580915411954-282cb1b0d780?auto=format&fit=crop&w=900&q=85",
+    image: "/images/gelato/instagram_2.jpg",
     caption: {
       ca: "🍨 Molt orgullosos d'anunciar la col·laboració amb @casabaltar! El millor 'Dulce de Leche' amb llet de les praderies d'Astúries.",
       es: "🍨 ¡Muy orgullosos de anunciar la colaboración con @casabaltar! El mejor 'Dulce de Leche' con leche de las praderas de Asturias."
@@ -290,7 +290,7 @@ export const instagramPosts = [
   {
     id: "C7ZE3QptS4o",
     url: "https://www.instagram.com/p/C7ZE3QptS4o/",
-    image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85",
+    image: "/images/gelato/instagram_3.jpg",
     caption: {
       ca: "🍦 Arriba a la nostra carta el nou Frozen Yogurt: natural, fresc i combinat amb la teua crema o topping favorit.",
       es: "🍦 Llega a nuestra carta el nuevo Frozen Yogurt: natural, fresco y combinado con tu crema o topping favorito."
@@ -301,9 +301,9 @@ export const instagramPosts = [
   {
     id: "C-aK__UNbXg",
     url: "https://www.instagram.com/p/C-aK__UNbXg/",
-    image: "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=900&q=85",
+    image: "/images/gelato/instagram_4.jpg",
     caption: {
-      ca: "☕ Helat artesanal italià, cafè d'especialitat, orxata, granissats i terrassa a l'Av. de la Música, 12 a Bunyol.",
+      ca: "☕ Gelat artesanal italià, cafè d'especialitat, orxata, granissats i terrassa a l'Av. de la Música, 12 a Bunyol.",
       es: "☕ Helado artesanal italiano, café de especialidad, horchata, granizados y terraza en Av. de la Música, 12 en Buñol."
     },
     tag: "Terrassa a Bunyol",

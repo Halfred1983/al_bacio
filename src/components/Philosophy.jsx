@@ -60,7 +60,7 @@ export default function Philosophy({ t }) {
             <div className="space-y-4 pt-8 sm:pt-12">
               <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-lg card-zoom border-2 border-white">
                 <img
-                  src="https://images.unsplash.com/photo-1580915411954-282cb1b0d780?auto=format&fit=crop&w=800&q=85"
+                  src="/images/gelato/craft_1.jpg"
                   alt="Casa Baltar Dulce de Leche"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -76,7 +76,7 @@ export default function Philosophy({ t }) {
             <div className="space-y-4">
               <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-lg card-zoom border-2 border-white">
                 <img
-                  src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=85"
+                  src="/images/gelato/craft_2.jpg"
                   alt="Mantecat artesanal"
                   className="w-full h-full object-cover"
                   loading="lazy"

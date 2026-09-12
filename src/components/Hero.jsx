@@ -10,7 +10,7 @@ export default function Hero({ t }) {
       {/* Immersive Background Image with Dark Vignette (Frigidarium style) */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=2000&q=85"
+          src="/images/gelato/hero_gelato.jpg"
           alt="Helado artesanal italiano Al Bacio"
           className="w-full h-full object-cover opacity-35 scale-105 transform animate-fadeIn duration-1000"
         />
