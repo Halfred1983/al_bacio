@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { MapPin, Clock, Navigation, Instagram, CheckCircle2 } from 'lucide-react';
 
 export default function LocationHours({ lang, t }) {
-  // Check live if open or closed
+  // Check live if open or closed according to official Google Maps listing
   const isOpenNow = useMemo(() => {
     try {
       const now = new Date();
@@ -12,13 +12,30 @@ export default function LocationHours({ lang, t }) {
       const min = parseInt(now.toLocaleTimeString('en-US', { ...options, minute: '2-digit' }), 10);
       const currentMinutes = hour * 60 + min;
 
-      if (day === 'Mon') return false; // Closed Monday
+      // Monday: Closed (Descanso semanal)
+      if (day === 'Mon') return false;
 
-      if (day === 'Sat' || day === 'Sun') {
-        return currentMinutes >= 720 || currentMinutes <= 30; // 12:00 to 00:30
+      // Tuesday & Wednesday: 17:30 – 21:00
+      if (day === 'Tue' || day === 'Wed') {
+        return currentMinutes >= 1050 && currentMinutes < 1260;
       }
 
-      return currentMinutes >= 960 && currentMinutes <= 1440; // 16:00 to 00:00
+      // Thursday: 17:30 – 21:30
+      if (day === 'Thu') {
+        return currentMinutes >= 1050 && currentMinutes < 1290;
+      }
+
+      // Friday & Saturday: 17:30 – 00:00 (midnight)
+      if (day === 'Fri' || day === 'Sat') {
+        return currentMinutes >= 1050 && currentMinutes < 1440;
+      }
+
+      // Sunday: 17:30 – 21:00
+      if (day === 'Sun') {
+        return currentMinutes >= 1050 && currentMinutes < 1260;
+      }
+
+      return false;
     } catch {
       return true;
     }

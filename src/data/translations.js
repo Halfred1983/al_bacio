@@ -105,8 +105,10 @@ export const translations = {
       address: "Avinguda de la Música, 12, 46360 Bunyol, València",
       hoursLabel: "Horaris d'obertura:",
       schedule: [
-        { days: "Dimarts a Divendres", hours: "16:00 – 00:00" },
-        { days: "Dissabtes i Diumenges", hours: "12:00 – 00:30" },
+        { days: "Dimarts i Dimecres", hours: "17:30 – 21:00" },
+        { days: "Dijous", hours: "17:30 – 21:30" },
+        { days: "Divendres i Dissabte", hours: "17:30 – 00:00" },
+        { days: "Diumenge", hours: "17:30 – 21:00" },
         { days: "Dilluns", hours: "Descans setmanal de l'obrador" }
       ],
       openNow: "Obert ara mateix",
@@ -226,8 +228,10 @@ export const translations = {
       address: "Avenida de la Música, 12, 46360 Buñol, Valencia",
       hoursLabel: "Horarios de apertura:",
       schedule: [
-        { days: "Martes a Viernes", hours: "16:00 – 00:00" },
-        { days: "Sábados y Domingos", hours: "12:00 – 00:30" },
+        { days: "Martes y Miércoles", hours: "17:30 – 21:00" },
+        { days: "Jueves", hours: "17:30 – 21:30" },
+        { days: "Viernes y Sábado", hours: "17:30 – 00:00" },
+        { days: "Domingo", hours: "17:30 – 21:00" },
         { days: "Lunes", hours: "Descanso semanal del obrador" }
       ],
       openNow: "Abierto ahora mismo",
