@@ -34,7 +34,7 @@ export default function App() {
         <About t={t} />
         <Philosophy t={t} />
         <Menu lang={lang} t={t} />
-        <TomatinaSpecial t={t} />
+        <TomatinaSpecial lang={lang} t={t} />
         <InstagramSection lang={lang} t={t} />
         <LocationHours t={t} />
       </main>
