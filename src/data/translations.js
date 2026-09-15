@@ -34,9 +34,9 @@ export const translations = {
       description: "Elaborem gelat fresc cada matí amb llet sencera, fruita natural de temporada i fruita seca de màxima qualitat. Sense aromes artificials, sense presses i amb tot el respecte per la recepta clàssica.",
       features: [
         "Mantecat fresc a diari al nostre obrador",
-        "Sorbets 100% naturals i vegans de fruita fresca",
-        "Pistatxo de Sicília i avellana pura del Piemont",
-        "Col·laboració especial amb Casa Baltar: 'Dulce de Leche' asturià"
+        "Pistatxo pur de selecció grega i avellana pura italiana",
+        "Col·laboració artesanal amb Casa Baltar: autèntic 'Dulce de Leche'",
+        "Ingredients nobles, receptes clàssiques i tradició artesana"
       ],
       button: "Els nostres sabors",
     },
@@ -49,7 +49,7 @@ export const translations = {
         cremes: "Cremes Clàssiques",
         sorbets: "Sorbets de Fruita",
         senseSucre: "Sense Sucre Afegit",
-        especials: "Especials & Tomatina",
+        especials: "Especials d'Obrador",
         yogurt: "Frozen Yogurt",
         cafe: "Cafè & Dolços",
       },
@@ -132,9 +132,9 @@ export const translations = {
       description: "Elaboramos helado fresco cada mañana con leche entera, fruta natural de temporada y frutos secos de máxima calidad. Sin aromas artificiales, sin prisas y con todo el respeto por la receta clásica.",
       features: [
         "Mantecado fresco a diario en nuestro obrador",
-        "Sorbetes 100% naturales y veganos de fruta fresca",
-        "Pistacho de Sicilia y avellana pura de Piamonte",
-        "Colaboración especial con Casa Baltar: dulce de leche asturiano"
+        "Pistacho puro de selección griega y avellana pura italiana",
+        "Colaboración artesanal con Casa Baltar: auténtico 'Dulce de Leche'",
+        "Materia prima noble, recetas clásicas y tradición artesana"
       ],
       button: "Nuestros sabores",
     },
@@ -147,7 +147,7 @@ export const translations = {
         cremes: "Cremas Clásicas",
         sorbets: "Sorbetes de Fruta",
         senseSucre: "Sin Azúcar Añadido",
-        especials: "Especiales & Tomatina",
+        especials: "Especiales del Obrador",
         yogurt: "Frozen Yogurt",
         cafe: "Café & Dulces",
       },

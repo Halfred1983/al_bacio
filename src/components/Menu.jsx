@@ -5,15 +5,21 @@ import { products } from '../data/products';
 export default function Menu({ lang, t }) {
   const [activeCategory, setActiveCategory] = useState('all');
 
-  const categories = [
+  const availableCategoryIds = useMemo(() => new Set(products.map((p) => p.category)), []);
+
+  const allCategoryDefs = [
     { id: 'all', label: t.menu.all },
     { id: 'cremes', label: t.menu.categories.cremes },
+    { id: 'especials', label: t.menu.categories.especials },
     { id: 'sorbets', label: t.menu.categories.sorbets },
     { id: 'senseSucre', label: t.menu.categories.senseSucre },
-    { id: 'especials', label: t.menu.categories.especials },
     { id: 'yogurt', label: t.menu.categories.yogurt },
     { id: 'cafe', label: t.menu.categories.cafe },
   ];
+
+  const categories = useMemo(() => {
+    return allCategoryDefs.filter((cat) => cat.id === 'all' || availableCategoryIds.has(cat.id));
+  }, [availableCategoryIds, t]);
 
   const filteredProducts = useMemo(() => {
     if (activeCategory === 'all') return products;

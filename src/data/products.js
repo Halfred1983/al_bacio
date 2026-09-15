@@ -1,51 +1,55 @@
 export const products = [
-  // CREMES CLÀSSIQUES
+  // 1. PISTACCHIO
   {
     id: "pistacchio",
     category: "cremes",
     name: {
-      ca: "Pistacchio Puro di Sicilia",
-      es: "Pistacchio Puro de Sicilia"
+      ca: "Pistacchio Selecció Grega Leagel",
+      es: "Pistacchio Selección Griega Leagel"
     },
     desc: {
-      ca: "100% gra de pistatxo de Sicília torrat a foc lent. Textura sedosa i sabor intens.",
-      es: "100% grano de pistacho de Sicilia tostado a fuego lento. Textura sedosa y sabor intenso."
+      ca: "Extraordinària selecció de pistatxos d'origen grec de Leagel. Una pasta pura amb un pessic de sal per a exaltar-ne el sabor i una punta de clorofil·la per al seu verd brillant. Torrats lentament als laboratoris Leagel, refinats i conservats en la seua màxima puresa.",
+      es: "Extraordinaria selección de pistachos de origen griego de Leagel. Una pasta pura con una pizca de sal para realzar su sabor y una punta de clorofila para su verde brillante. Tostados lentamente en los laboratorios Leagel, refinados y conservados en su máxima pureza."
     },
     dietary: ["senseGluten"],
     image: "/images/gelato/pistacchio.jpg",
     badge: {
-      ca: "El Clàssic",
-      es: "El Clásico"
+      ca: "Selecció Leagel",
+      es: "Selección Leagel"
     }
   },
+
+  // 2. CAFFÈ
   {
-    id: "bacio",
+    id: "caffe",
     category: "cremes",
     name: {
-      ca: "Bacio Artigianale",
-      es: "Bacio Artesanal"
+      ca: "Caffè Espresso d'Especialitat",
+      es: "Caffè Espresso de Especialidad"
     },
     desc: {
-      ca: "Xocolata noble amb pasta pura d'avellana de Piemont i trossos d'avellana cruixent.",
-      es: "Chocolate noble con pasta pura de avellana de Piamonte y trozos de avellana crujiente."
+      ca: "Elaborat amb una cuidada selecció de grans de cafè d'especialitat acabats de moldre. Infusió cremosa, intensa i aromàtica, coronada amb grans de cafè torrats per a un sabor profund i autèntic.",
+      es: "Elaborado con una cuidada selección de granos de café de especialidad recién molidos. Infusión cremosa, intensa y aromática, coronada con granos de café tostados para un sabor profundo y auténtico."
     },
     dietary: ["senseGluten"],
-    image: "/images/gelato/bacio.jpg",
+    image: "/images/gelato/caffe.jpg",
     badge: {
-      ca: "Especialitat Al Bacio",
-      es: "Especialidad Al Bacio"
+      ca: "Cafè d'Especialitat",
+      es: "Café de Especialidad"
     }
   },
+
+  // 3. DULCE DE LECHE CON DULCE DE LECHE BALTAR
   {
     id: "dulce-de-leche",
-    category: "cremes",
+    category: "especials",
     name: {
       ca: "Dulce de Leche Casa Baltar",
       es: "Dulce de Leche Casa Baltar"
     },
     desc: {
-      ca: "Col·laboració exclusiva amb Casa Baltar. Elaborat amb llet fresca de les praderies d'Astúries.",
-      es: "Colaboración exclusiva con Casa Baltar. Elaborado con leche fresca de las praderas de Asturias."
+      ca: "Col·laboració artesanal amb Casa Baltar (Galícia). Gelat cremós vetejat amb el seu autèntic dulce de leche elaborat a foc lent amb un 80% de llet fresca de la seua pròpia ramaderia seguint la recepta tradicional uruguaiana.",
+      es: "Colaboración artesanal con Casa Baltar (Galicia). Helado cremoso veteado con su auténtico dulce de leche elaborado a fuego lento con un 80% de leche fresca de su propia ganadería siguiendo la receta tradicional uruguaya."
     },
     dietary: ["senseGluten", "proximitat"],
     image: "/images/gelato/dulce_de_leche.jpg",
@@ -54,212 +58,124 @@ export const products = [
       es: "Casa Baltar"
     }
   },
-  {
-    id: "fior-di-latte",
-    category: "cremes",
-    name: {
-      ca: "Fior di Latte Tradizionale",
-      es: "Fior di Latte Tradicional"
-    },
-    desc: {
-      ca: "La puresa de la llet sencera fresca i la nata. El sabor més net de la tradició italiana.",
-      es: "La pureza de la leche entera fresca y la nata. El sabor más limpio de la tradición italiana."
-    },
-    dietary: ["senseGluten"],
-    image: "/images/gelato/fior_di_latte.jpg",
-    badge: {
-      ca: "Pura Llet",
-      es: "Pura Leche"
-    }
-  },
-  {
-    id: "stracciatella",
-    category: "cremes",
-    name: {
-      ca: "Stracciatella alla Romana",
-      es: "Stracciatella a la Romana"
-    },
-    desc: {
-      ca: "Base cremosa de fior di latte amb fils de xocolata negra cruixent fosa a mà.",
-      es: "Base cremosa de fior di latte con hilos de chocolate negro crujiente fundido a mano."
-    },
-    dietary: ["senseGluten"],
-    image: "/images/gelato/stracciatella.jpg",
-    badge: {
-      ca: "Tradicional",
-      es: "Tradicional"
-    }
-  },
 
-  // SORBETS DE FRUITA
+  // 4. OREO
   {
-    id: "sorbet-llima",
-    category: "sorbets",
-    name: {
-      ca: "Sorbet de Llima Natural",
-      es: "Sorbete de Limón Natural"
-    },
-    desc: {
-      ca: "Elaborat amb suc de llima natural espremut al dia. Refrescant, viu i digestiu.",
-      es: "Elaborado con zumo de limón natural exprimido al día. Refrescante, vivo y digestivo."
-    },
-    dietary: ["senseGluten", "vegat"],
-    image: "/images/gelato/sorbet_llima.jpg",
-    badge: {
-      ca: "100% Fruita",
-      es: "100% Fruta"
-    }
-  },
-  {
-    id: "sorbet-maduixa",
-    category: "sorbets",
-    name: {
-      ca: "Sorbet de Maduixes Fresques",
-      es: "Sorbete de Fresas Frescas"
-    },
-    desc: {
-      ca: "Altíssim percentatge de fruita seleccionada. Dolçor natural sense colorants ni conservants.",
-      es: "Altísimo porcentaje de fruta seleccionada. Dulzor natural sin colorantes ni conservantes."
-    },
-    dietary: ["senseGluten", "vegat"],
-    image: "/images/gelato/sorbet_maduixa.jpg",
-    badge: {
-      ca: "100% Vegà",
-      es: "100% Vegano"
-    }
-  },
-  {
-    id: "sorbet-mango",
-    category: "sorbets",
-    name: {
-      ca: "Sorbet de Mango & Maracujà",
-      es: "Sorbete de Mango & Maracuyá"
-    },
-    desc: {
-      ca: "Textura increïblement suau amb el contrast vibrant del maracujà fresc.",
-      es: "Textura increíblemente suave con el contraste vibrante del maracuyá fresco."
-    },
-    dietary: ["senseGluten", "vegat"],
-    image: "/images/gelato/sorbet_mango.jpg",
-    badge: {
-      ca: "Exòtic",
-      es: "Exótico"
-    }
-  },
-
-  // SENSE SUCRE AFEGIT
-  {
-    id: "xocolata-sense-sucre",
-    category: "senseSucre",
-    name: {
-      ca: "Xocolata 72% Sense Sucre Afegit",
-      es: "Chocolate 72% Sin Azúcar Añadido"
-    },
-    desc: {
-      ca: "Intensitat pura de cacau noble, endolcit suaument per a cuidar-se gaudint.",
-      es: "Intensidad pura de cacao noble, endulzado suavemente para cuidarse disfrutando."
-    },
-    dietary: ["senseGluten", "senseSucre"],
-    image: "/images/gelato/xocolata_sense_sucre.jpg",
-    badge: {
-      ca: "Sense Sucre",
-      es: "Sin Azúcar"
-    }
-  },
-  {
-    id: "avellana-sense-sucre",
-    category: "senseSucre",
-    name: {
-      ca: "Avellana Piemont Sense Sucre Afegit",
-      es: "Avellana Piamonte Sin Azúcar Añadido"
-    },
-    desc: {
-      ca: "Tota la cremositat i el torrat característic de l'avellana IGP sense sucres afegits.",
-      es: "Toda la cremosidad y el tostado característico de la avellana IGP sin azúcares añadidos."
-    },
-    dietary: ["senseGluten", "senseSucre"],
-    image: "/images/gelato/avellana_sense_sucre.jpg",
-    badge: {
-      ca: "Lleuger",
-      es: "Ligero"
-    }
-  },
-
-  // ESPECIALS & TOMATINA
-  {
-    id: "la-tomatina",
+    id: "oreo",
     category: "especials",
     name: {
-      ca: "Gelat 'La Tomatina de Bunyol'",
-      es: "Helado 'La Tomatina de Buñol'"
+      ca: "Crema Oreo & Cookies",
+      es: "Crema Oreo & Cookies"
     },
     desc: {
-      ca: "L'exclusiu homenatge a la festa de Bunyol elaborat amb tomaca local. Protagonista a À Punt Mèdia.",
-      es: "El exclusivo homenaje a la fiesta de Buñol elaborado con tomate local. Protagonista en À Punt Mèdia."
+      ca: "Cremosa base de fior di latte i vainilla amb generosos trossos de galeta Oreo cruixent i un intens vetejat de xocolata negra. El favorit dels més llaminers.",
+      es: "Cremosa base de fior di latte y vainilla con generosos trozos de galleta Oreo crujiente y un intenso veteado de chocolate negro. El favorito de los más golosos."
     },
-    dietary: ["senseGluten", "vegat", "proximitat"],
-    image: "/images/gelato/tomatina.jpg",
+    dietary: [],
+    image: "/images/gelato/oreo.jpg",
     badge: {
-      ca: "Orgull de Bunyol",
-      es: "Orgullo de Buñol"
+      ca: "Cruixent",
+      es: "Crujiente"
     }
   },
 
-  // FROZEN YOGURT
+  // 5. MASCARPONE E AMARENA
   {
-    id: "frozen-yogurt",
-    category: "yogurt",
+    id: "mascarpone-amarena",
+    category: "especials",
     name: {
-      ca: "Frozen Yogurt Natural Artesà",
-      es: "Frozen Yogurt Natural Artesano"
+      ca: "Mascarpone & Amarena",
+      es: "Mascarpone & Amarena"
     },
     desc: {
-      ca: "Iogurt natural batut fred, acompanyat amb la teua crema calenta i toppings cruixents preferits.",
-      es: "Yogur natural batido frío, acompañado con tu crema templada y toppings crujientes favoritos."
+      ca: "Clàssic aristocràtic de la tradició italiana: autèntic formatge mascarpone fresc d'indiscutible cremositat, contrastat amb un generós vetejat de cireres silvestres amarena confitades en el seu almívar.",
+      es: "Clásico aristocrático de la tradición italiana: auténtico queso mascarpone fresco de indiscutible cremosidad, contrastado con un generoso veteado de cerezas silvestres amarena confitadas en su almíbar."
     },
     dietary: ["senseGluten"],
-    image: "/images/gelato/frozen_yogurt.jpg",
+    image: "/images/gelato/mascarpone_amarena.jpg",
     badge: {
-      ca: "Artesà",
-      es: "Artesano"
+      ca: "Tradició Italiana",
+      es: "Tradición Italiana"
     }
   },
 
-  // CAFÈ & DOLÇOS
+  // 6. LECHE MERENGADA
   {
-    id: "affogato-al-caffe",
-    category: "cafe",
+    id: "leche-merengada",
+    category: "especials",
     name: {
-      ca: "Affogato al Caffè Espresso",
-      es: "Affogato al Caffè Espresso"
+      ca: "Llet Merengada Tradicional",
+      es: "Leche Merengada Tradicional"
     },
     desc: {
-      ca: "Bola de gelat artesà fior di latte banyada al moment amb un espresso italià d'especialitat.",
-      es: "Bola de helado artesano fior di latte bañada al momento con un espresso italiano de especialidad."
+      ca: "Un gran clàssic de la nostra cultura: llet fresca infusionada amb canella en branca de Ceilan i pell de llima mediterrània, combinada amb merengue artesanal i empolvorada amb canyella.",
+      es: "Un gran clásico de nuestra cultura: leche fresca infusionada con canela en rama de Ceilán y piel de limón mediterráneo, combinada con merengue artesanal y espolvoreada con canela."
     },
     dietary: ["senseGluten"],
-    image: "/images/gelato/affogato.jpg",
+    image: "/images/gelato/leche_merengada.jpg",
     badge: {
-      ca: "Cafè Italià",
-      es: "Café Italiano"
+      ca: "Clàssic Tradicional",
+      es: "Clásico Tradicional"
     }
   },
+
+  // 7. TURRÓN
   {
-    id: "orxata-granissat",
-    category: "cafe",
+    id: "turron",
+    category: "especials",
     name: {
-      ca: "Orxata Artesana de Xufa & Granissats",
-      es: "Horchata Artesana de Chufa & Granizados"
+      ca: "Torró de Xixona Artesà",
+      es: "Turrón de Jijona Artesano"
     },
     desc: {
-      ca: "Elaborada al dia amb xufa valenciana i granissats naturals de llima espremuda.",
-      es: "Elaborada al día con chufa valenciana y granizados naturales de limón recién exprimido."
+      ca: "Homenatge al dolç més emblemàtic de la nostra terra: elaborat amb autèntic torró de Xixona de qualitat suprema, ametles marcones torrades a l'obrador i un toc de mel de flor de taronger.",
+      es: "Homenaje al dulce más emblemático de nuestra tierra: elaborado con auténtico turrón de Jijona de calidad suprema, almendras marconas tostadas en el obrador y un toque de miel de azahar."
     },
-    dietary: ["senseGluten", "vegat", "proximitat"],
-    image: "/images/gelato/orxata.jpg",
+    dietary: ["senseGluten", "proximitat"],
+    image: "/images/gelato/turron.jpg",
     badge: {
-      ca: "Tradició",
-      es: "Tradición"
+      ca: "De la Terra",
+      es: "De la Tierra"
+    }
+  },
+
+  // 8. NOCCIOLA
+  {
+    id: "nocciola",
+    category: "cremes",
+    name: {
+      ca: "Nocciola Pura Italiana",
+      es: "Nocciola Pura Italiana"
+    },
+    desc: {
+      ca: "Elaborat amb pasta pura d'avellanes italianes de torrat marcat. Es caracteritza pel seu color intens, aroma inconfusible i sabor decidit per a un gelat amb molt de cos i caràcter.",
+      es: "Elaborado con pasta pura de avellanas italianas de tostado marcado. Se caracteriza por su color intenso, aroma inconfundible y sabor decidido para un helado con mucho cuerpo y carácter."
+    },
+    dietary: ["senseGluten"],
+    image: "/images/gelato/nocciola.jpg",
+    badge: {
+      ca: "Torrat Marcat",
+      es: "Tostado Marcado"
+    }
+  },
+
+  // 9. CIOCCOLATO AL LATTE
+  {
+    id: "cioccolato-al-latte",
+    category: "cremes",
+    name: {
+      ca: "Cioccolato al Latte Cremós",
+      es: "Cioccolato al Latte Cremoso"
+    },
+    desc: {
+      ca: "L'harmonia perfecta entre cacau seleccionat i la riquesa de la llet sencera fresca. De textura vellutada, sabor rodó i dolçor equilibrada que captiva des de la primera cullerada.",
+      es: "La armonía perfecta entre cacao seleccionado y la riqueza de la leche entera fresca. De textura aterciopelada, sabor redondo y dulzor equilibrado que cautiva desde la primera cucharada."
+    },
+    dietary: ["senseGluten"],
+    image: "/images/gelato/cioccolato_al_latte.jpg",
+    badge: {
+      ca: "Cremós & Suau",
+      es: "Cremoso & Suave"
     }
   }
 ];
