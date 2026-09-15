@@ -1,10 +1,16 @@
 export const tomatinaVideos = [
   {
     id: "rtve",
-    outlet: "RTVE Noticias",
-    channel: "Televisión Española (La 1)",
+    outlet: {
+      ca: "RTVE Notícies",
+      es: "RTVE Noticias"
+    },
+    channel: {
+      ca: "Televisió Espanyola (La 1)",
+      es: "Televisión Española (La 1)"
+    },
     title: {
-      ca: "Buñol es prepara per a la Tomatina amb un gelat amb sabor a tomaca",
+      ca: "Bunyol es prepara per a la Tomatina amb un gelat amb sabor a tomaca",
       es: "Buñol se prepara para la Tomatina con un helado con sabor a tomate"
     },
     url: "https://www.youtube.com/watch?v=vqtYvwCE3Ss",
@@ -16,8 +22,14 @@ export const tomatinaVideos = [
   },
   {
     id: "efe",
-    outlet: "Agencia EFE",
-    channel: "EFE Agro & Televisión",
+    outlet: {
+      ca: "Agència EFE",
+      es: "Agencia EFE"
+    },
+    channel: {
+      ca: "EFE Agro & Televisió",
+      es: "EFE Agro & Televisión"
+    },
     title: {
       ca: "La Tomatina de Bunyol ja cap en un cucurutxo gràcies a Al Bacio",
       es: "La Tomatina de Buñol ya cabe en un cucurucho gracias a Al Bacio"
@@ -34,13 +46,16 @@ export const tomatinaVideos = [
 export const pressArticles = [
   {
     id: "valenciaplaza",
-    outlet: "Valencia Plaza",
+    outlet: {
+      ca: "Valencia Plaza",
+      es: "Valencia Plaza"
+    },
     headline: {
       ca: "Un gelat amb sabor a tomaca: el peculiar homenatge d'un italià a la festa de La Tomatina de Bunyol",
       es: "Un helado con sabor a tomate: el peculiar homenaje de un italiano a la fiesta de La Tomatina de Buñol"
     },
     quote: {
-      ca: "«El tomaca apareix primer, amb la seua acidesa, i després arriba la dolçor i la cremositat artesanal.»",
+      ca: "«La tomaca apareix primer, amb la seua acidesa, i després arriba la dolçor i la cremositat artesanal.»",
       es: "«El tomate aparece primero, con su acidez, y después llega el dulzor y la cremosidad artesanal.»"
     },
     url: "https://valenciaplaza.com/valenciaplaza/comarca-y-empresa/un-helado-con-sabor-a-tomate-el-peculiar-homenaje-de-un-italiano-a-la-fiesta-de-la-tomatina-de-bunol",
@@ -51,7 +66,10 @@ export const pressArticles = [
   },
   {
     id: "abc",
-    outlet: "Diario ABC",
+    outlet: {
+      ca: "Diari ABC",
+      es: "Diario ABC"
+    },
     headline: {
       ca: "Un gelat amb sabor a tomaca, la gran novetat de la Tomatina",
       es: "Un helado con sabor a tomate, la gran novedad de la Tomatina"
@@ -68,7 +86,10 @@ export const pressArticles = [
   },
   {
     id: "ondacero",
-    outlet: "Onda Cero",
+    outlet: {
+      ca: "Onda Cero",
+      es: "Onda Cero"
+    },
     headline: {
       ca: "La Tomatina es reinventa en forma de gelat artesà de tomaca",
       es: "La Tomatina se reinventa en forma de helado artesano de tomate"
@@ -85,7 +106,10 @@ export const pressArticles = [
   },
   {
     id: "efeagro",
-    outlet: "EFE Agro",
+    outlet: {
+      ca: "Agència EFE Agro",
+      es: "Agencia EFE Agro"
+    },
     headline: {
       ca: "La Tomatina de Bunyol ja cap en un cucurutxo",
       es: "La Tomatina de Buñol ya cabe en un cucurucho"
@@ -102,7 +126,10 @@ export const pressArticles = [
   },
   {
     id: "telecinco",
-    outlet: "Informativos Telecinco",
+    outlet: {
+      ca: "Informatius Telecinco",
+      es: "Informativos Telecinco"
+    },
     headline: {
       ca: "Al Bacio ret homenatge a la Tomatina amb el seu gelat de tomaca",
       es: "Al Bacio rinde homenaje a la Tomatina con su helado de tomate"
@@ -119,7 +146,10 @@ export const pressArticles = [
   },
   {
     id: "tucomarca",
-    outlet: "TuComarca.com",
+    outlet: {
+      ca: "TuComarca.com",
+      es: "TuComarca.com"
+    },
     headline: {
       ca: "La Tomatina inspira un nou sabor a Bunyol: Al Bacio crea un gelat gastronòmic de tomaca",
       es: "La Tomatina inspira un nuevo sabor en Buñol: Al Bacio crea un helado gastronómico de tomate"
@@ -136,16 +166,16 @@ export const pressArticles = [
   }
 ];
 
-export const mediaLogos = [
+export const getMediaLogos = (lang) => [
   "RTVE",
   "Telecinco",
-  "Agencia EFE",
-  "Diario ABC",
+  lang === 'ca' ? "Agència EFE" : "Agencia EFE",
+  lang === 'ca' ? "Diari ABC" : "Diario ABC",
   "Onda Cero",
   "À Punt Mèdia",
   "Valencia Plaza",
   "TuComarca",
-  "Actualidad Valencia",
+  lang === 'ca' ? "Actualitat València" : "Actualidad Valencia",
   "Infobae",
   "El Heraldo de Puebla"
 ];

@@ -72,7 +72,7 @@ export const translations = {
       storyTitle: "L'art de convertir la Tomatina en gelat",
       storyP1: "Diego Salvati va viure la festa de La Tomatina i va quedar captivat per l'energia del poble. Quan el 23 de maig va obrir les portes d'Al Bacio a l'Avinguda de la Música, 12, junt a la seua mare i el seu germà, tenia clar que volia retre un homenatge a Bunyol.",
       storyP2: "El repte era majúscul: elaborar un gelat gastronòmic autèntic amb tomaca 100% local, de la terreta. Després de provar 4 o 5 versions per a trobar el balanç perfecte entre l'acidesa natural de la tomaca i la cremositat dolça del gelat tradicional italià, la fórmula magistral va nàixer: tomaca pelada a mà, desllavorada i mantecada fresca al propi obrador.",
-      storyP3: "L'acollida va ser immediata: recolzat per l'organització oficial de La Tomatina, la primera cubeta es va esgotar en qüestió d'hores i la notícia va fer la volta al món en cadenes com RTVE, Telecinco, À Punt, Agencia EFE, ABC, Onda Cero i diaris internacionals.",
+      storyP3: "L'acollida va ser immediata: recolzat per l'organització oficial de La Tomatina, la primera cubeta es va esgotar en qüestió d'hores i la notícia va fer la volta al món en cadenes com RTVE, Telecinco, À Punt, Agència EFE, Diari ABC, Onda Cero i diaris internacionals.",
       craftStats: [
         { value: "100%", label: "Tomaca local de la terreta" },
         { value: "4-5", label: "Proves fins a la perfecció" },
@@ -80,7 +80,7 @@ export const translations = {
         { value: "Edició", label: "Limitada oficial Tomatina" }
       ],
       videoTitle: "Mira els reportatges de televisió",
-      videoSubtitle: "RTVE Noticias i Agencia EFE van visitar el nostre obrador a Bunyol:",
+      videoSubtitle: "RTVE Notícies i Agència EFE van visitar el nostre obrador a Bunyol:",
       watchVideo: "Veure Reportatge",
       pressTitle: "Què diu la premsa sobre Al Bacio",
       pressSubtitle: "Titulars i cròniques dels principals mitjans de comunicació:",

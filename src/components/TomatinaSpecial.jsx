@@ -10,9 +10,11 @@ import {
   Award, 
   Quote 
 } from 'lucide-react';
-import { tomatinaVideos, pressArticles, mediaLogos } from '../data/tomatinaPress';
+import { tomatinaVideos, pressArticles, getMediaLogos } from '../data/tomatinaPress';
 
 export default function TomatinaSpecial({ lang, t }) {
+  const logos = getMediaLogos(lang);
+
   return (
     <section
       id="tomatina"
@@ -50,7 +52,7 @@ export default function TomatinaSpecial({ lang, t }) {
             </span>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
-            {mediaLogos.map((outlet) => (
+            {logos.map((outlet) => (
               <span
                 key={outlet}
                 className="px-3 py-1 rounded-full text-xs font-semibold bg-cacao-900/80 text-cream-100/90 border border-cacao-700 hover:border-tomatina-500/70 transition-colors"
@@ -69,7 +71,7 @@ export default function TomatinaSpecial({ lang, t }) {
             <div className="lg:col-span-5 relative min-h-[380px] lg:min-h-full card-zoom">
               <img
                 src="/images/tomatina/diego_salvati.jpg"
-                alt="Diego Salvati amb el gelat La Tomatina"
+                alt={lang === 'ca' ? "Diego Salvati amb el gelat La Tomatina a Bunyol" : "Diego Salvati con el helado La Tomatina en Buñol"}
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -77,7 +79,7 @@ export default function TomatinaSpecial({ lang, t }) {
               
               <div className="absolute bottom-5 left-5 right-5 sm:bottom-6 sm:left-6">
                 <span className="inline-block bg-tomatina-500 text-white text-[10px] sm:text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow mb-2">
-                  Al Bacio · Bunyol
+                  {lang === 'ca' ? 'Al Bacio · Bunyol' : 'Al Bacio · Buñol'}
                 </span>
                 <p className="text-xs sm:text-sm text-cream-100 font-medium">
                   {t.tomatina.photoDiegoCaption}
@@ -173,7 +175,7 @@ export default function TomatinaSpecial({ lang, t }) {
                 <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between">
                   <div>
                     <span className="text-[11px] font-semibold text-caramel-400 uppercase tracking-wider block mb-1">
-                      {video.channel}
+                      {typeof video.channel === 'object' ? video.channel[lang] : video.channel}
                     </span>
                     <h4 className="font-serif text-lg font-bold text-cream-50 group-hover:text-tomatina-400 transition-colors">
                       {video.title[lang]}
@@ -203,7 +205,7 @@ export default function TomatinaSpecial({ lang, t }) {
               <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-3">
                 <img
                   src="/images/tomatina/vitrina_tomatina.jpg"
-                  alt="La vitrina d'Al Bacio"
+                  alt={lang === 'ca' ? "La vitrina d'Al Bacio a Bunyol" : "La vitrina de Al Bacio en Buñol"}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
@@ -217,7 +219,7 @@ export default function TomatinaSpecial({ lang, t }) {
               <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-3">
                 <img
                   src="/images/tomatina/cucurucho_tomatina.jpg"
-                  alt="Cucurutxo de La Tomatina"
+                  alt={lang === 'ca' ? "Cucurutxo artesà de La Tomatina" : "Cucurucho artesano de La Tomatina"}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
@@ -231,7 +233,7 @@ export default function TomatinaSpecial({ lang, t }) {
               <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-3">
                 <img
                   src="/images/gelato/tomatina.jpg"
-                  alt="Textura mantecada"
+                  alt={lang === 'ca' ? "Textura mantecada artesana de tomaca" : "Textura mantecada artesana de tomate"}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
@@ -266,7 +268,7 @@ export default function TomatinaSpecial({ lang, t }) {
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-tomatina-400">
-                      {article.outlet}
+                      {typeof article.outlet === 'object' ? article.outlet[lang] : article.outlet}
                     </span>
                     <span className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-cacao-700/80 text-cream-300">
                       {typeof article.tag === 'object' ? article.tag[lang] : article.tag}
