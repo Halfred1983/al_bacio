@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://albaciogelateria.es/</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://albaciogelateria.es/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://albaciogelateria.es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://albaciogelateria.es/" />
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://albaciogelateria.es/og-image.jpg</image:loc>
+      <image:title>Gelateria Artigianale Al Bacio Buñol</image:title>
+      <image:caption>Logotip oficial de Gelateria Artigianale Al Bacio a Bunyol (València)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://albaciogelateria.es/images/tomatina/diego_salvati.jpg</image:loc>
+      <image:title>Diego Salvati - Gelat La Tomatina</image:title>
+      <image:caption>Diego Salvati elaborant el gelat artesà de tomaca de La Tomatina a Bunyol</image:caption>
+    </image:image>
+  </url>
+</urlset>

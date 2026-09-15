@@ -1,0 +1,6 @@
+# Robots.txt for Gelateria Artigianale Al Bacio
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://albaciogelateria.es/sitemap.xml

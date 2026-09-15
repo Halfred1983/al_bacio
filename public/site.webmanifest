@@ -1,0 +1,31 @@
+{
+  "name": "Gelateria Artigianale Al Bacio",
+  "short_name": "Al Bacio",
+  "description": "Gelateria Artigianale Al Bacio a Bunyol (València). L'autèntic gelat artesanal italià mantecat a diari.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF7F2",
+  "theme_color": "#3C281E",
+  "lang": "ca",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
