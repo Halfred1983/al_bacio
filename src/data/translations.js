@@ -39,6 +39,8 @@ export const translations = {
         "Ingredients nobles, receptes clàssiques i tradició artesana"
       ],
       button: "Els nostres sabors",
+      baltarBadge: "Casa Baltar · Galícia",
+      dailyBadge: "Elaboració diària",
     },
     menu: {
       badge: "La Vitrina",
@@ -50,7 +52,7 @@ export const translations = {
         sorbets: "Sorbets de Fruita",
         senseSucre: "Sense Sucre Afegit",
         especials: "Especials d'Obrador",
-        yogurt: "Frozen Yogurt",
+        yogurt: "Iogurt Gelat",
         cafe: "Cafè & Dolços",
       },
       dietary: {
@@ -115,6 +117,7 @@ export const translations = {
       slogan: "Al Bacio significa fet amb mestria i perfecció.",
       rights: "Tots els drets reservats.",
       location: "Avinguda de la Música, 12 · Bunyol (València)",
+      backToTop: "Tornar a dalt",
     }
   },
   es: {
@@ -157,6 +160,8 @@ export const translations = {
         "Materia prima noble, recetas clásicas y tradición artesana"
       ],
       button: "Nuestros sabores",
+      baltarBadge: "Casa Baltar · Galicia",
+      dailyBadge: "Elaboración diaria",
     },
     menu: {
       badge: "La Vitrina",
@@ -168,7 +173,7 @@ export const translations = {
         sorbets: "Sorbetes de Fruta",
         senseSucre: "Sin Azúcar Añadido",
         especials: "Especiales del Obrador",
-        yogurt: "Frozen Yogurt",
+        yogurt: "Yogur Helado",
         cafe: "Café & Dulces",
       },
       dietary: {
@@ -233,6 +238,7 @@ export const translations = {
       slogan: "Al Bacio significa hecho con maestría y perfección.",
       rights: "Todos los derechos reservados.",
       location: "Avenida de la Música, 12 · Buñol (Valencia)",
+      backToTop: "Volver arriba",
     }
   }
 };

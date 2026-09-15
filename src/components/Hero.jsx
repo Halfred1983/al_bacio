@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { ChevronDown, Sparkles, ArrowRight } from 'lucide-react';
 
-export default function Hero({ t }) {
+export default function Hero({ lang, t }) {
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -31,7 +31,9 @@ export default function Hero({ t }) {
           className="w-full h-full object-cover scale-105"
         >
           <source src="/videos/trim.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          {lang === 'ca'
+            ? 'El vostre navegador no admet la reproducció de vídeos.'
+            : 'Tu navegador no soporta la reproducción de vídeos.'}
         </video>
 
         {/* Dark Overlay for Text Readability */}
@@ -92,7 +94,7 @@ export default function Hero({ t }) {
       <a
         href="#historia"
         className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 text-white/80 hover:text-caramel-400 flex flex-col items-center group transition-colors z-10"
-        aria-label="Següent secció"
+        aria-label={lang === 'ca' ? 'Següent secció' : 'Siguiente sección'}
       >
         <span className="text-[10px] uppercase tracking-[0.25em] mb-1 font-semibold opacity-75 group-hover:opacity-100">
           {t.hero.scrollDown}

@@ -64,8 +64,8 @@ export const products = [
     id: "oreo",
     category: "especials",
     name: {
-      ca: "Crema Oreo & Cookies",
-      es: "Crema Oreo & Cookies"
+      ca: "Crema de Galetes Oreo",
+      es: "Crema de Galletas Oreo"
     },
     desc: {
       ca: "Cremosa base de fior di latte i vainilla amb generosos trossos de galeta Oreo cruixent i un intens vetejat de xocolata negra. El favorit dels més llaminers.",
@@ -189,30 +189,48 @@ export const instagramPosts = [
       ca: "🍅 ¡La Tomatina, ara també en gelat! Gràcies a @apunt_media per visitar-nos i donar veu al nostre gelat dedicat a Bunyol.",
       es: "🍅 ¡La Tomatina, ahora también en helado! Gracias a @apunt_media por visitarnos y dar voz a nuestro nuevo helado dedicado a Buñol."
     },
-    tag: "À Punt Mèdia · Tomatina",
-    date: "Agost 2026"
+    tag: {
+      ca: "À Punt Mèdia · Tomatina",
+      es: "À Punt Mèdia · Tomatina"
+    },
+    date: {
+      ca: "Agost 2026",
+      es: "Agosto 2026"
+    }
   },
   {
     id: "C9k6YwNtM_z",
     url: "https://www.instagram.com/p/C9k6YwNtM_z/",
     image: "/images/gelato/instagram_2.jpg",
     caption: {
-      ca: "🍨 Molt orgullosos d'anunciar la col·laboració amb @casabaltar! El millor 'Dulce de Leche' amb llet de les praderies d'Astúries.",
-      es: "🍨 ¡Muy orgullosos de anunciar la colaboración con @casabaltar! El mejor 'Dulce de Leche' con leche de las praderas de Asturias."
+      ca: "🍨 Molt orgullosos d'anunciar la col·laboració amb @casabaltar! El millor 'Dulce de Leche' amb llet fresca de les praderies de Galícia.",
+      es: "🍨 ¡Muy orgullosos de anunciar la colaboración con @casabaltar! El mejor 'Dulce de Leche' con leche fresca de las praderas de Galicia."
     },
-    tag: "Col·laboració Casa Baltar",
-    date: "Juliol 2026"
+    tag: {
+      ca: "Col·laboració Casa Baltar",
+      es: "Colaboración Casa Baltar"
+    },
+    date: {
+      ca: "Juliol 2026",
+      es: "Julio 2026"
+    }
   },
   {
     id: "C7ZE3QptS4o",
     url: "https://www.instagram.com/p/C7ZE3QptS4o/",
     image: "/images/gelato/instagram_3.jpg",
     caption: {
-      ca: "🍦 Arriba a la nostra carta el nou Frozen Yogurt: natural, fresc i combinat amb la teua crema o topping favorit.",
-      es: "🍦 Llega a nuestra carta el nuevo Frozen Yogurt: natural, fresco y combinado con tu crema o topping favorito."
+      ca: "🍦 Arriba a la nostra carta el nou iogurt gelat artesà: natural, fresc i combinat amb la teua crema o guarnició favorita.",
+      es: "🍦 Llega a nuestra carta el nuevo yogur helado artesano: natural, fresco y combinado con tu crema o guarnición favorita."
     },
-    tag: "Frozen Yogurt",
-    date: "Maig 2026"
+    tag: {
+      ca: "Iogurt Gelat Artesà",
+      es: "Yogur Helado Artesano"
+    },
+    date: {
+      ca: "Maig 2026",
+      es: "Mayo 2026"
+    }
   },
   {
     id: "C-aK__UNbXg",
@@ -222,7 +240,13 @@ export const instagramPosts = [
       ca: "☕ Gelat artesanal italià, cafè d'especialitat, orxata, granissats i terrassa a l'Av. de la Música, 12 a Bunyol.",
       es: "☕ Helado artesanal italiano, café de especialidad, horchata, granizados y terraza en Av. de la Música, 12 en Buñol."
     },
-    tag: "Terrassa a Bunyol",
-    date: "Juny 2026"
+    tag: {
+      ca: "Terrassa a Bunyol",
+      es: "Terraza en Buñol"
+    },
+    date: {
+      ca: "Juny 2026",
+      es: "Junio 2026"
+    }
   }
 ];

@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { MapPin, Clock, Navigation, Instagram, CheckCircle2 } from 'lucide-react';
 
-export default function LocationHours({ t }) {
+export default function LocationHours({ lang, t }) {
   // Check live if open or closed
   const isOpenNow = useMemo(() => {
     try {
@@ -63,7 +63,7 @@ export default function LocationHours({ t }) {
                   {isOpenNow ? t.location.openNow : t.location.closedNow}
                 </div>
                 <div className="text-xs text-cacao-600 mt-0.5">
-                  Avinguda de la Música, 12 · Bunyol
+                  {lang === 'ca' ? 'Avinguda de la Música, 12 · Bunyol' : 'Avenida de la Música, 12 · Buñol'}
                 </div>
               </div>
             </div>
@@ -117,7 +117,7 @@ export default function LocationHours({ t }) {
               referrerPolicy="no-referrer-when-downgrade"
             />
             <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-md px-4 py-2 rounded-2xl shadow-sm border border-cream-200 text-xs font-bold text-cacao-800 pointer-events-none">
-              📍 Av. de la Música, 12 · Bunyol
+              📍 {lang === 'ca' ? 'Av. de la Música, 12 · Bunyol' : 'Av. de la Música, 12 · Buñol'}
             </div>
           </div>
 

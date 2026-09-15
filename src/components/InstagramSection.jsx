@@ -59,7 +59,7 @@ export default function InstagramSection({ lang, t }) {
                 
                 {/* Floating Tag */}
                 <div className="absolute top-3 left-3 bg-cacao-900/80 backdrop-blur-xs text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
-                  {post.tag}
+                  {post.tag[lang] || post.tag}
                 </div>
 
                 {/* Hover overlay with Instagram Icon */}
@@ -76,7 +76,7 @@ export default function InstagramSection({ lang, t }) {
                   {post.caption[lang]}
                 </p>
                 <div className="flex items-center justify-between text-[11px] font-bold text-cacao-500 pt-2 border-t border-cream-200/60">
-                  <span>{post.date}</span>
+                  <span>{post.date[lang] || post.date}</span>
                   <span className="text-terracotta-600 flex items-center gap-1">
                     <Heart className="w-3 h-3 fill-current" />
                     Al Bacio
@@ -100,7 +100,7 @@ export default function InstagramSection({ lang, t }) {
       <a
         href="#on-som"
         className="absolute bottom-4 left-1/2 -translate-x-1/2 text-cacao-400 hover:text-terracotta-600 p-2 transition-colors"
-        aria-label="Següent secció"
+        aria-label={lang === 'ca' ? 'Següent secció' : 'Siguiente sección'}
       >
         <ChevronDown className="w-5 h-5 animate-bounce" />
       </a>

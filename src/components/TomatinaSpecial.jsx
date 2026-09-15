@@ -164,7 +164,7 @@ export default function TomatinaSpecial({ lang, t }) {
                   <div className="absolute top-3 left-3 bg-cacao-900/90 backdrop-blur-xs text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full border border-cacao-700">
                     <div className="flex items-center gap-1.5">
                       <Tv className="w-3 h-3 text-tomatina-400" />
-                      <span>{video.badge}</span>
+                      <span>{typeof video.badge === 'object' ? video.badge[lang] : video.badge}</span>
                     </div>
                   </div>
                 </div>
@@ -269,7 +269,7 @@ export default function TomatinaSpecial({ lang, t }) {
                       {article.outlet}
                     </span>
                     <span className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-cacao-700/80 text-cream-300">
-                      {article.tag}
+                      {typeof article.tag === 'object' ? article.tag[lang] : article.tag}
                     </span>
                   </div>
 
@@ -308,7 +308,7 @@ export default function TomatinaSpecial({ lang, t }) {
       <a
         href="#instagram"
         className="absolute bottom-4 left-1/2 -translate-x-1/2 text-cream-400 hover:text-tomatina-400 p-2 transition-colors"
-        aria-label="Següent secció"
+        aria-label={lang === 'ca' ? 'Següent secció' : 'Siguiente sección'}
       >
         <ChevronDown className="w-5 h-5 animate-bounce" />
       </a>

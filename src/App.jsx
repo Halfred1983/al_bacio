@@ -30,13 +30,13 @@ export default function App() {
       <PaginationDots t={t} />
       
       <main className="flex-grow">
-        <Hero t={t} />
-        <About t={t} />
-        <Philosophy t={t} />
+        <Hero lang={lang} t={t} />
+        <About lang={lang} t={t} />
+        <Philosophy lang={lang} t={t} />
         <Menu lang={lang} t={t} />
         <TomatinaSpecial lang={lang} t={t} />
         <InstagramSection lang={lang} t={t} />
-        <LocationHours t={t} />
+        <LocationHours lang={lang} t={t} />
       </main>
 
       <Footer t={t} lang={lang} />

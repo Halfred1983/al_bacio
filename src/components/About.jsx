@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChevronDown, ArrowRight } from 'lucide-react';
 
-export default function About({ t }) {
+export default function About({ lang, t }) {
   return (
     <section
       id="historia"
@@ -101,7 +101,7 @@ export default function About({ t }) {
       <a
         href="#filosofia"
         className="absolute bottom-4 left-1/2 -translate-x-1/2 text-cacao-400 hover:text-terracotta-600 p-2 transition-colors"
-        aria-label="Següent secció"
+        aria-label={lang === 'ca' ? 'Següent secció' : 'Siguiente sección'}
       >
         <ChevronDown className="w-5 h-5 animate-bounce" />
       </a>

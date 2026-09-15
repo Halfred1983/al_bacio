@@ -9,7 +9,10 @@ export const tomatinaVideos = [
     },
     url: "https://www.youtube.com/watch?v=vqtYvwCE3Ss",
     image: "/images/tomatina/rtve_reportaje.jpg",
-    badge: "RTVE · Telediario"
+    badge: {
+      ca: "RTVE · Telediari",
+      es: "RTVE · Telediario"
+    }
   },
   {
     id: "efe",
@@ -21,7 +24,10 @@ export const tomatinaVideos = [
     },
     url: "https://www.youtube.com/watch?v=kPtOP1nT_zc",
     image: "/images/tomatina/efe_video.jpg",
-    badge: "Agencia EFE"
+    badge: {
+      ca: "Agència EFE",
+      es: "Agencia EFE"
+    }
   }
 ];
 
@@ -38,7 +44,10 @@ export const pressArticles = [
       es: "«El tomate aparece primero, con su acidez, y después llega el dulzor y la cremosidad artesanal.»"
     },
     url: "https://valenciaplaza.com/valenciaplaza/comarca-y-empresa/un-helado-con-sabor-a-tomate-el-peculiar-homenaje-de-un-italiano-a-la-fiesta-de-la-tomatina-de-bunol",
-    tag: "Reportatge a fons"
+    tag: {
+      ca: "Reportatge a fons",
+      es: "Reportaje a fondo"
+    }
   },
   {
     id: "abc",
@@ -52,7 +61,10 @@ export const pressArticles = [
       es: "«La Tomatina no deja de evolucionar y esta edición también está disponible en formato cucurucho gracias a Al Bacio.»"
     },
     url: "https://www.abc.es/cultura/helado-sabor-tomate-novedad-tomatina-ano-20260814105431-nt.html",
-    tag: "Premsa Nacional"
+    tag: {
+      ca: "Premsa Nacional",
+      es: "Prensa Nacional"
+    }
   },
   {
     id: "ondacero",
@@ -66,7 +78,10 @@ export const pressArticles = [
       es: "«Un helado gastronómico elaborado con tomate local de la terreta que equilibra acidez y frescura.»"
     },
     url: "https://www.ondacero.es/emisoras/comunidad-valenciana/valencia/noticias/tomatina-reinventa-forma-helado-tomate_202608146a7ee98aa046ad6ebcb0c1e5.html",
-    tag: "Ràdio Nacional"
+    tag: {
+      ca: "Ràdio Nacional",
+      es: "Radio Nacional"
+    }
   },
   {
     id: "efeagro",
@@ -80,7 +95,10 @@ export const pressArticles = [
       es: "«Diego Salvati ha logrado trasladar el espíritu de la fiesta a una creación gastronómica de edición limitada.»"
     },
     url: "https://efeagro.com/tomatina-helado-artesanal/",
-    tag: "Agència EFE"
+    tag: {
+      ca: "Agència EFE",
+      es: "Agencia EFE"
+    }
   },
   {
     id: "telecinco",
@@ -94,7 +112,10 @@ export const pressArticles = [
       es: "«La heladería familiar buñolense protagonista de la actualidad televisiva estatal.»"
     },
     url: "https://www.telecinco.es/noticias/valencia/20260822/tomatina-bacio-heladeria-artesanal-bunol_18_019985501.html",
-    tag: "Televisió"
+    tag: {
+      ca: "Televisió",
+      es: "Televisión"
+    }
   },
   {
     id: "tucomarca",
@@ -108,7 +129,10 @@ export const pressArticles = [
       es: "«Acogida extraordinaria de vecinos y visitantes con la primera cubeta agotada en cuestión de horas.»"
     },
     url: "https://tucomarca.com/la-tomatina-inspira-un-nuevo-sabor-en-bunol-la-heladeria-italiana-al-bacio-crea-un-helado-gastronomico-de-tomate/",
-    tag: "Bunyol & Comarca"
+    tag: {
+      ca: "Bunyol & Comarca",
+      es: "Buñol & Comarca"
+    }
   }
 ];
 

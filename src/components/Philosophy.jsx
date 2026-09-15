@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChevronDown, Check, ArrowRight, Sparkles } from 'lucide-react';
 
-export default function Philosophy({ t }) {
+export default function Philosophy({ lang, t }) {
   return (
     <section
       id="filosofia"
@@ -68,7 +68,7 @@ export default function Philosophy({ t }) {
               </div>
               <div className="p-3 bg-white rounded-2xl border border-cream-200 text-center shadow-2xs">
                 <span className="text-[11px] font-bold uppercase tracking-wider text-cacao-800">
-                  Casa Baltar Astúries
+                  {t.craft.baltarBadge}
                 </span>
               </div>
             </div>
@@ -84,7 +84,7 @@ export default function Philosophy({ t }) {
               </div>
               <div className="p-3 bg-white rounded-2xl border border-cream-200 text-center shadow-2xs">
                 <span className="text-[11px] font-bold uppercase tracking-wider text-cacao-800">
-                  Elaboració diària
+                  {t.craft.dailyBadge}
                 </span>
               </div>
             </div>
@@ -98,7 +98,7 @@ export default function Philosophy({ t }) {
       <a
         href="#gelats"
         className="absolute bottom-4 left-1/2 -translate-x-1/2 text-cacao-400 hover:text-terracotta-600 p-2 transition-colors"
-        aria-label="Següent secció"
+        aria-label={lang === 'ca' ? 'Següent secció' : 'Siguiente sección'}
       >
         <ChevronDown className="w-5 h-5 animate-bounce" />
       </a>

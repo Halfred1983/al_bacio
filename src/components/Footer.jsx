@@ -13,7 +13,7 @@ export default function Footer({ t, lang }) {
       <button
         onClick={scrollToTop}
         className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-terracotta-500 hover:bg-terracotta-600 text-white flex items-center justify-center shadow-lg transition-transform hover:-translate-y-1"
-        aria-label="Tornar a dalt"
+        aria-label={t.footer.backToTop || (lang === 'ca' ? 'Tornar a dalt' : 'Volver arriba')}
       >
         <ArrowUp className="w-5 h-5" />
       </button>
