@@ -86,10 +86,7 @@ export const translations = {
       pressSubtitle: "Titulars i cròniques dels principals mitjans de comunicació:",
       readArticle: "Llegir notícia",
       visitButton: "Vine a tastar-lo a Bunyol",
-      galleryBadge: "Galeria de l'Obrador",
-      photoDiegoCaption: "Diego Salvati amb la cubeta de gelat 'La Tomatina' a Al Bacio",
-      photoVitrinaCaption: "La vitrina artesanal amb el cartell distintiu fet a mà",
-      photoCucuruchoCaption: "Servit al moment en cucurutxo artesà cruixent"
+      photoDiegoCaption: "Diego Salvati amb la cubeta de gelat 'La Tomatina' a Al Bacio"
     },
     instagramSection: {
       badge: "Xarxes Socials",
@@ -209,10 +206,7 @@ export const translations = {
       pressSubtitle: "Titulares y crónicas de los principales diarios y emisoras:",
       readArticle: "Leer noticia",
       visitButton: "Ven a probarlo en Buñol",
-      galleryBadge: "Galería del Obrador",
-      photoDiegoCaption: "Diego Salvati con la cubeta de helado 'La Tomatina' en Al Bacio",
-      photoVitrinaCaption: "La vitrina artesanal con el cartel distintivo hecho a mano",
-      photoCucuruchoCaption: "Servido al momento en cucurucho artesano crujiente"
+      photoDiegoCaption: "Diego Salvati con la cubeta de helado 'La Tomatina' en Al Bacio"
     },
     instagramSection: {
       badge: "Redes Sociales",

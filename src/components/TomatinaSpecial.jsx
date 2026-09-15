@@ -192,59 +192,6 @@ export default function TomatinaSpecial({ lang, t }) {
           </div>
         </div>
 
-        {/* Press Photo Gallery */}
-        <div className="mb-16 sm:mb-20">
-          <div className="text-center max-w-xl mx-auto mb-8">
-            <span className="text-xs font-bold uppercase tracking-[0.25em] text-caramel-400 block mb-1">
-              {t.tomatina.galleryBadge}
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="bg-cacao-800/60 rounded-3xl overflow-hidden border border-cacao-700/70 p-3 flex flex-col">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-3">
-                <img
-                  src="/images/tomatina/vitrina_tomatina.jpg"
-                  alt={lang === 'ca' ? "La vitrina d'Al Bacio a Bunyol" : "La vitrina de Al Bacio en Buñol"}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                />
-              </div>
-              <p className="text-xs text-cream-300 font-light px-2 py-1">
-                {t.tomatina.photoVitrinaCaption}
-              </p>
-            </div>
-
-            <div className="bg-cacao-800/60 rounded-3xl overflow-hidden border border-cacao-700/70 p-3 flex flex-col">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-3">
-                <img
-                  src="/images/tomatina/cucurucho_tomatina.jpg"
-                  alt={lang === 'ca' ? "Cucurutxo artesà de La Tomatina" : "Cucurucho artesano de La Tomatina"}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                />
-              </div>
-              <p className="text-xs text-cream-300 font-light px-2 py-1">
-                {t.tomatina.photoCucuruchoCaption}
-              </p>
-            </div>
-
-            <div className="bg-cacao-800/60 rounded-3xl overflow-hidden border border-cacao-700/70 p-3 flex flex-col">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-3">
-                <img
-                  src="/images/gelato/tomatina.jpg"
-                  alt={lang === 'ca' ? "Textura mantecada artesana de tomaca" : "Textura mantecada artesana de tomate"}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                />
-              </div>
-              <p className="text-xs text-cream-300 font-light px-2 py-1">
-                {t.tomatina.tagline}
-              </p>
-            </div>
-          </div>
-        </div>
-
         {/* Press Articles & Quotes Grid */}
         <div className="mb-16">
           <div className="text-center max-w-2xl mx-auto mb-10">
