@@ -7,9 +7,9 @@ import About from './components/About';
 import Philosophy from './components/Philosophy';
 import Menu from './components/Menu';
 import TomatinaSpecial from './components/TomatinaSpecial';
-import InstagramSection from './components/InstagramSection';
 import LocationHours from './components/LocationHours';
 import Footer from './components/Footer';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 
 export default function App() {
   const [lang, setLang] = useState(() => {
@@ -35,11 +35,11 @@ export default function App() {
         <Philosophy lang={lang} t={t} />
         <Menu lang={lang} t={t} />
         <TomatinaSpecial lang={lang} t={t} />
-        <InstagramSection lang={lang} t={t} />
         <LocationHours lang={lang} t={t} />
       </main>
 
       <Footer t={t} lang={lang} />
+      <FloatingWhatsApp lang={lang} t={t} />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { MapPin, Clock, Navigation, Instagram, CheckCircle2 } from 'lucide-react';
+import { MapPin, Clock, Navigation, Phone, Mail, CheckCircle2 } from 'lucide-react';
 
 export default function LocationHours({ lang, t }) {
   // Check live if open or closed according to official Google Maps listing
@@ -61,10 +61,10 @@ export default function LocationHours({ lang, t }) {
           <div className="w-16 h-0.5 bg-caramel-500 mx-auto rounded-full" />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           
           {/* Information Column */}
-          <div className="lg:col-span-5 space-y-6">
+          <div className="lg:col-span-5 space-y-5 flex flex-col justify-between">
             
             {/* Live Status Card */}
             <div className={`p-5 rounded-3xl border flex items-center space-x-4 transition-all ${
@@ -86,12 +86,12 @@ export default function LocationHours({ lang, t }) {
             </div>
 
             {/* Address */}
-            <div className="bg-white p-6 rounded-3xl border border-cream-200 shadow-2xs">
+            <div className="bg-white p-5 sm:p-6 rounded-3xl border border-cream-200 shadow-2xs">
               <div className="flex items-center space-x-2 text-cacao-900 mb-2">
                 <MapPin className="w-5 h-5 text-terracotta-500" />
                 <h3 className="font-serif text-lg font-bold">{t.location.addressLabel}</h3>
               </div>
-              <p className="text-sm text-cacao-700 leading-relaxed font-light mb-4">
+              <p className="text-sm text-cacao-700 leading-relaxed font-light mb-3">
                 {t.location.address}
               </p>
               <a
@@ -106,12 +106,12 @@ export default function LocationHours({ lang, t }) {
             </div>
 
             {/* Schedule */}
-            <div className="bg-white p-6 rounded-3xl border border-cream-200 shadow-2xs">
+            <div className="bg-white p-5 sm:p-6 rounded-3xl border border-cream-200 shadow-2xs">
               <div className="flex items-center space-x-2 text-cacao-900 mb-3">
                 <Clock className="w-5 h-5 text-caramel-500" />
                 <h3 className="font-serif text-lg font-bold">{t.location.hoursLabel}</h3>
               </div>
-              <div className="space-y-2 text-xs sm:text-sm">
+              <div className="space-y-1.5 text-xs sm:text-sm">
                 {t.location.schedule.map((item, idx) => (
                   <div key={idx} className="flex justify-between items-center py-1 border-b border-cream-100 last:border-0">
                     <span className="text-cacao-700 font-medium">{item.days}</span>
@@ -121,14 +121,79 @@ export default function LocationHours({ lang, t }) {
               </div>
             </div>
 
+            {/* Contact Card (Phone, WhatsApp, Email) */}
+            <div className="bg-white p-5 sm:p-6 rounded-3xl border border-cream-200 shadow-2xs">
+              <div className="flex items-center space-x-2 text-cacao-900 mb-4">
+                <Phone className="w-5 h-5 text-terracotta-500" />
+                <h3 className="font-serif text-lg font-bold">{t.location.contactLabel}</h3>
+              </div>
+
+              {/* Phone & WhatsApp */}
+              <div className="mb-4 pb-4 border-b border-cream-100">
+                <div className="text-[11px] uppercase font-bold text-cacao-500 tracking-wider mb-1.5">
+                  {t.location.phoneLabel}
+                </div>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+                  <a
+                    href="tel:+34611985121"
+                    className="font-mono text-base font-bold text-cacao-900 hover:text-terracotta-600 transition-colors"
+                  >
+                    +34 611 98 51 21
+                  </a>
+                  <div className="flex items-center gap-2">
+                    <a
+                      href="https://wa.me/34611985121"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-xs hover:shadow transition-all"
+                    >
+                      <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                      </svg>
+                      <span>{t.location.whatsappBtn}</span>
+                    </a>
+                    <a
+                      href="tel:+34611985121"
+                      className="inline-flex items-center gap-1 bg-cream-100 hover:bg-cream-200 text-cacao-800 text-xs font-semibold px-3 py-1.5 rounded-full transition-colors"
+                    >
+                      <Phone className="w-3 h-3 text-cacao-600" />
+                      <span>{t.location.callBtn}</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Email */}
+              <div>
+                <div className="text-[11px] uppercase font-bold text-cacao-500 tracking-wider mb-1.5">
+                  {t.location.emailLabel}
+                </div>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <a
+                    href="mailto:naturalmentegelato.lab@gmail.com"
+                    className="text-xs sm:text-sm font-medium text-terracotta-600 hover:text-terracotta-700 break-all"
+                  >
+                    naturalmentegelato.lab@gmail.com
+                  </a>
+                  <a
+                    href="mailto:naturalmentegelato.lab@gmail.com"
+                    className="inline-flex items-center gap-1 self-start sm:self-auto bg-cream-100 hover:bg-cream-200 text-cacao-800 text-xs font-semibold px-3 py-1.5 rounded-full transition-colors"
+                  >
+                    <Mail className="w-3 h-3 text-cacao-600" />
+                    <span>{t.location.emailBtn}</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
           </div>
 
           {/* Map Column */}
-          <div className="lg:col-span-7 h-[420px] rounded-3xl overflow-hidden border border-cream-200 shadow-md relative">
+          <div className="lg:col-span-7 min-h-[480px] h-full rounded-3xl overflow-hidden border border-cream-200 shadow-md relative">
             <iframe
               title="Gelateria Al Bacio Buñol"
               src="https://maps.google.com/maps?q=Avenida%20de%20la%20M%C3%BAsica%2012,%2046360%20Bu%C3%B1ol,%20Valencia&t=&z=16&ie=UTF8&iwloc=&output=embed"
-              className="w-full h-full border-0"
+              className="w-full h-full min-h-[480px] border-0"
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

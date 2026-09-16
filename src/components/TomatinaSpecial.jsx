@@ -253,9 +253,9 @@ export default function TomatinaSpecial({ lang, t }) {
 
       </div>
 
-      {/* Down arrow to Instagram */}
+      {/* Down arrow to location & contact */}
       <a
-        href="#instagram"
+        href="#on-som"
         className="absolute bottom-4 left-1/2 -translate-x-1/2 text-cream-400 hover:text-tomatina-400 p-2 transition-colors"
         aria-label={lang === 'ca' ? 'Següent secció' : 'Siguiente sección'}
       >

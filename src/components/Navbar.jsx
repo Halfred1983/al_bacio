@@ -19,7 +19,6 @@ export default function Navbar({ lang, setLang, t }) {
     { href: '#filosofia', label: t.nav.craft },
     { href: '#gelats', label: t.nav.flavors },
     { href: '#tomatina', label: t.nav.tomatina },
-    { href: '#instagram', label: t.nav.instagram },
     { href: '#on-som', label: t.nav.visit },
   ];
 

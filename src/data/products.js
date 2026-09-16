@@ -12,7 +12,7 @@ export const products = [
       es: "Extraordinaria selección de pistachos de origen griego de Leagel. Una pasta pura con una pizca de sal para realzar su sabor y una punta de clorofila para su verde brillante. Tostados lentamente en los laboratorios Leagel, refinados y conservados en su máxima pureza."
     },
     dietary: ["senseGluten"],
-    image: "/images/gelato/pistacchio.jpg",
+    image: "/images/gelato/pistacchio_leagel.jpg",
     badge: {
       ca: "Selecció Leagel",
       es: "Selección Leagel"
@@ -52,7 +52,7 @@ export const products = [
       es: "Colaboración artesanal con Casa Baltar (Galicia). Helado cremoso veteado con su auténtico dulce de leche elaborado a fuego lento con un 80% de leche fresca de su propia ganadería siguiendo la receta tradicional uruguaya."
     },
     dietary: ["senseGluten", "proximitat"],
-    image: "/images/gelato/dulce_de_leche.jpg",
+    image: "/images/gelato/dulce_de_leche_baltar.jpg",
     badge: {
       ca: "Casa Baltar",
       es: "Casa Baltar"

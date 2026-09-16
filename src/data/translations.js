@@ -109,13 +109,13 @@ export const translations = {
       },
       stories: [
         { label: "Tomatina 🍅", img: "/images/tomatina/diego_salvati.jpg" },
-        { label: "Els Gelats 🍦", img: "/images/gelato/pistacchio.jpg" },
+        { label: "Els Gelats 🍦", img: "/images/gelato/pistacchio_leagel.jpg" },
         { label: "L'Obrador 👨‍🍳", img: "/images/gelato/about_1.jpg" },
         { label: "Terrassa ☀️", img: "/images/gelato/about_2.jpg" }
       ]
     },
     location: {
-      badge: "Visita'ns",
+      badge: "Visita'ns & Contacte",
       title: "T'esperem a la terrassa",
       addressLabel: "Adreça:",
       address: "Avinguda de la Música, 12, 46360 Bunyol, València",
@@ -130,6 +130,20 @@ export const translations = {
       openNow: "Obert ara mateix",
       closedNow: "Tancat ara · Obrim a la vesprada",
       directionsBtn: "Com arribar amb Google Maps",
+      contactLabel: "Contacte directe:",
+      phoneLabel: "Telèfon & WhatsApp:",
+      emailLabel: "Correu electrònic:",
+      whatsappBtn: "WhatsApp",
+      callBtn: "Trucar",
+      emailBtn: "Enviar correu",
+    },
+    contact: {
+      phone: "+34 611 98 51 21",
+      phoneRaw: "+34611985121",
+      email: "naturalmentegelato.lab@gmail.com",
+      floatingTooltip: "Xateja amb nosaltres per WhatsApp",
+      floatingAria: "Obrir conversa de WhatsApp",
+      whatsappDefaultMsg: "Hola Al Bacio! M'agradaria fer una consulta sobre els vostres gelats artesans.",
     },
     footer: {
       slogan: "Al Bacio significa fet amb mestria i perfecció.",
@@ -248,13 +262,13 @@ export const translations = {
       },
       stories: [
         { label: "Tomatina 🍅", img: "/images/tomatina/diego_salvati.jpg" },
-        { label: "Los Helados 🍦", img: "/images/gelato/pistacchio.jpg" },
+        { label: "Los Helados 🍦", img: "/images/gelato/pistacchio_leagel.jpg" },
         { label: "El Obrador 👨‍🍳", img: "/images/gelato/about_1.jpg" },
         { label: "Terraza ☀️", img: "/images/gelato/about_2.jpg" }
       ]
     },
     location: {
-      badge: "Visítanos",
+      badge: "Visítanos & Contacto",
       title: "Te esperamos en la terraza",
       addressLabel: "Dirección:",
       address: "Avenida de la Música, 12, 46360 Buñol, Valencia",
@@ -269,6 +283,20 @@ export const translations = {
       openNow: "Abierto ahora mismo",
       closedNow: "Cerrado ahora · Abrimos por la tarde",
       directionsBtn: "Cómo llegar en Google Maps",
+      contactLabel: "Contacto directo:",
+      phoneLabel: "Teléfono & WhatsApp:",
+      emailLabel: "Correo electrónico:",
+      whatsappBtn: "WhatsApp",
+      callBtn: "Llamar",
+      emailBtn: "Enviar correo",
+    },
+    contact: {
+      phone: "+34 611 98 51 21",
+      phoneRaw: "+34611985121",
+      email: "naturalmentegelato.lab@gmail.com",
+      floatingTooltip: "Escríbenos por WhatsApp",
+      floatingAria: "Abrir conversación de WhatsApp",
+      whatsappDefaultMsg: "¡Hola Al Bacio! Me gustaría hacer una consulta sobre vuestros helados artesanales.",
     },
     footer: {
       slogan: "Al Bacio significa hecho con maestría y perfección.",

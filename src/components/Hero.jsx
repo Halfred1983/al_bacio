@@ -27,7 +27,7 @@ export default function Hero({ lang, t }) {
           loop
           muted
           playsInline
-          poster="/images/gelato/hero_gelato.jpg"
+          poster="/images/gelato/hero_poster.jpg"
           className="w-full h-full object-cover scale-105"
         >
           <source src="/videos/trim.mp4" type="video/mp4" />
@@ -36,8 +36,8 @@ export default function Hero({ lang, t }) {
             : 'Tu navegador no soporta la reproducción de vídeos.'}
         </video>
 
-        {/* Dark Overlay for Text Readability */}
-        <div className="absolute inset-0 bg-black/60 sm:bg-black/55 bg-gradient-to-b from-cacao-900/70 via-black/40 to-cacao-900/85 backdrop-brightness-[0.8]" />
+        {/* Lighter, Luminous Overlay to Showcase the Video */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/15 to-black/50" />
       </div>
 
       {/* Foreground Content: Centered Heading & Call-to-Action */}
@@ -82,7 +82,7 @@ export default function Hero({ lang, t }) {
           </a>
           <a
             href="#historia"
-            className="inline-flex items-center space-x-2 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/40 text-white px-8 py-3.5 sm:py-4 rounded-full text-xs font-bold uppercase tracking-[0.2em] hover:scale-105 active:scale-95 transition-all"
+            className="inline-flex items-center space-x-2 bg-black/25 hover:bg-black/40 backdrop-blur-md border border-white/50 text-white px-8 py-3.5 sm:py-4 rounded-full text-xs font-bold uppercase tracking-[0.2em] shadow-md hover:scale-105 active:scale-95 transition-all"
           >
             <span>{t.nav.story}</span>
           </a>

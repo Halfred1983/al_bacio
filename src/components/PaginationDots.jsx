@@ -9,7 +9,6 @@ export default function PaginationDots({ t }) {
     { id: 'filosofia', label: t.nav.craft },
     { id: 'gelats', label: t.nav.flavors },
     { id: 'tomatina', label: t.nav.tomatina },
-    { id: 'instagram', label: t.nav.instagram },
     { id: 'on-som', label: t.nav.visit },
   ];
 
