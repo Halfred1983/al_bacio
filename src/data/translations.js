@@ -89,11 +89,30 @@ export const translations = {
       photoDiegoCaption: "Diego Salvati amb la cubeta de gelat 'La Tomatina' a Al Bacio"
     },
     instagramSection: {
-      badge: "Xarxes Socials",
-      title: "Segueix-nos a Instagram",
+      badge: "Xarxes Socials & Comunitat",
+      title: "El nostre feed a Instagram",
       subtitle: "Fotos i novetats directament des del nostre obrador i la nostra terrassa a Bunyol.",
       handle: "@gelateria.al.bacio.es",
+      profileName: "Gelateria Artigianale Al Bacio",
+      category: "Gelateria Artesanal · Bunyol",
+      bio: "Autèntic gelato italià mantecat a diari a Bunyol 🍦 · Cafè d'especialitat ☕ · Creadors del gelat de La Tomatina 🍅 · Av. de la Música, 12",
+      postsCount: "8 publicacions",
+      followers: "1.8k seguidors",
+      following: "240 seguint",
       followBtn: "Seguir a Instagram",
+      facebookBtn: "Pàgina de Facebook",
+      viewOnIg: "Obrir publicació a Instagram",
+      tabs: {
+        posts: "Publicacions",
+        reels: "Vídeos & Reels",
+        tagged: "Etiquetes"
+      },
+      stories: [
+        { label: "Tomatina 🍅", img: "/images/tomatina/diego_salvati.jpg" },
+        { label: "Els Gelats 🍦", img: "/images/gelato/pistacchio.jpg" },
+        { label: "L'Obrador 👨‍🍳", img: "/images/gelato/about_1.jpg" },
+        { label: "Terrassa ☀️", img: "/images/gelato/about_2.jpg" }
+      ]
     },
     location: {
       badge: "Visita'ns",
@@ -209,11 +228,30 @@ export const translations = {
       photoDiegoCaption: "Diego Salvati con la cubeta de helado 'La Tomatina' en Al Bacio"
     },
     instagramSection: {
-      badge: "Redes Sociales",
-      title: "Síguenos en Instagram",
+      badge: "Redes Sociales & Comunidad",
+      title: "Nuestro feed en Instagram",
       subtitle: "Fotos y novedades directamente desde nuestro obrador y nuestra terraza en Buñol.",
       handle: "@gelateria.al.bacio.es",
+      profileName: "Gelateria Artigianale Al Bacio",
+      category: "Heladería Artesanal · Buñol",
+      bio: "Auténtico gelato italiano mantecado a diario en Buñol 🍦 · Café de especialidad ☕ · Creadores del helado de La Tomatina 🍅 · Av. de la Música, 12",
+      postsCount: "8 publicaciones",
+      followers: "1.8k seguidores",
+      following: "240 seguidos",
       followBtn: "Seguir en Instagram",
+      facebookBtn: "Página de Facebook",
+      viewOnIg: "Abrir publicación en Instagram",
+      tabs: {
+        posts: "Publicaciones",
+        reels: "Vídeos & Reels",
+        tagged: "Etiquetas"
+      },
+      stories: [
+        { label: "Tomatina 🍅", img: "/images/tomatina/diego_salvati.jpg" },
+        { label: "Los Helados 🍦", img: "/images/gelato/pistacchio.jpg" },
+        { label: "El Obrador 👨‍🍳", img: "/images/gelato/about_1.jpg" },
+        { label: "Terraza ☀️", img: "/images/gelato/about_2.jpg" }
+      ]
     },
     location: {
       badge: "Visítanos",

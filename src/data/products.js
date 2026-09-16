@@ -182,71 +182,155 @@ export const products = [
 
 export const instagramPosts = [
   {
-    id: "C_Hq7gMtL5r",
-    url: "https://www.instagram.com/p/C_Hq7gMtL5r/",
-    image: "/images/gelato/instagram_1.jpg",
+    id: "tomatina-tv",
+    url: "https://www.instagram.com/gelateria.al.bacio.es/",
+    image: "/images/instagram/post_1.jpg",
     caption: {
-      ca: "🍅 ¡La Tomatina, ara també en gelat! Gràcies a @apunt_media per visitar-nos i donar veu al nostre gelat dedicat a Bunyol.",
-      es: "🍅 ¡La Tomatina, ahora también en helado! Gracias a @apunt_media por visitarnos y dar voz a nuestro nuevo helado dedicado a Buñol."
+      ca: "🍅 ¡La Tomatina, ara també en gelat! Gràcies a RTVE, Telecinco i Agència EFE per visitar el nostre obrador a Bunyol i donar a conèixer aquest homenatge gastronòmic.",
+      es: "🍅 ¡La Tomatina, ahora también en helado! Gracias a RTVE, Telecinco y Agencia EFE por visitar nuestro obrador en Buñol y dar a conocer este homenaje gastronómico."
     },
     tag: {
-      ca: "À Punt Mèdia · Tomatina",
-      es: "À Punt Mèdia · Tomatina"
+      ca: "Edició Especial Tomatina",
+      es: "Edición Especial Tomatina"
     },
+    likes: 342,
+    comments: 28,
     date: {
       ca: "Agost 2026",
       es: "Agosto 2026"
     }
   },
   {
-    id: "C9k6YwNtM_z",
-    url: "https://www.instagram.com/p/C9k6YwNtM_z/",
-    image: "/images/gelato/instagram_2.jpg",
+    id: "vitrina-tomatina",
+    url: "https://www.instagram.com/gelateria.al.bacio.es/",
+    image: "/images/instagram/post_2.jpg",
     caption: {
-      ca: "🍨 Molt orgullosos d'anunciar la col·laboració amb @casabaltar! El millor 'Dulce de Leche' amb llet fresca de les praderies de Galícia.",
-      es: "🍨 ¡Muy orgullosos de anunciar la colaboración con @casabaltar! El mejor 'Dulce de Leche' con leche fresca de las praderas de Galicia."
+      ca: "✨ La vitrina d'Al Bacio a punt amb el cartell artesà 'La Tomatina 🍅'. Ingredients 100% de proximitat per a celebrar la festa del nostre poble.",
+      es: "✨ La vitrina de Al Bacio lista con el cartel artesano 'La Tomatina 🍅'. Ingredientes 100% de proximidad para celebrar la fiesta de nuestro pueblo."
     },
     tag: {
-      ca: "Col·laboració Casa Baltar",
-      es: "Colaboración Casa Baltar"
+      ca: "La Vitrina d'Al Bacio",
+      es: "La Vitrina de Al Bacio"
     },
+    likes: 289,
+    comments: 19,
+    date: {
+      ca: "Agost 2026",
+      es: "Agosto 2026"
+    }
+  },
+  {
+    id: "cucurucho-artesano",
+    url: "https://www.instagram.com/gelateria.al.bacio.es/",
+    image: "/images/instagram/post_3.jpg",
+    caption: {
+      ca: "🍦 Cucurutxos artesans fets al moment, cruixents i mantecats amb passió italiana. Quin sabor tries hui per a passejar per Bunyol?",
+      es: "🍦 Cucuruchos artesanos hechos al momento, crujientes y mantecados con pasión italiana. ¿Qué sabor eliges hoy para pasear por Buñol?"
+    },
+    tag: {
+      ca: "Cucurutxo Artesà",
+      es: "Cucurucho Artesano"
+    },
+    likes: 234,
+    comments: 15,
     date: {
       ca: "Juliol 2026",
       es: "Julio 2026"
     }
   },
   {
-    id: "C7ZE3QptS4o",
-    url: "https://www.instagram.com/p/C7ZE3QptS4o/",
-    image: "/images/gelato/instagram_3.jpg",
+    id: "pistacchio-greco",
+    url: "https://www.instagram.com/gelateria.al.bacio.es/",
+    image: "/images/instagram/post_4.jpg",
     caption: {
-      ca: "🍦 Arriba a la nostra carta el nou iogurt gelat artesà: natural, fresc i combinat amb la teua crema o guarnició favorita.",
-      es: "🍦 Llega a nuestra carta el nuevo yogur helado artesano: natural, fresco y combinado con tu crema o guarnición favorita."
+      ca: "💚 Pistacchio pur de selecció grega Leagel: torrat intens, un pessic de sal marina i sabor pur que conquesta des de la primera cullerada.",
+      es: "💚 Pistacho puro de selección griega Leagel: tostado intenso, una pizca de sal marina y sabor puro que conquista desde la primera cucharada."
     },
     tag: {
-      ca: "Iogurt Gelat Artesà",
-      es: "Yogur Helado Artesano"
+      ca: "Selecció Leagel",
+      es: "Selección Leagel"
     },
+    likes: 312,
+    comments: 26,
+    date: {
+      ca: "Juliol 2026",
+      es: "Julio 2026"
+    }
+  },
+  {
+    id: "dulce-de-leche-baltar",
+    url: "https://www.instagram.com/gelateria.al.bacio.es/",
+    image: "/images/instagram/post_5.jpg",
+    caption: {
+      ca: "🍨 Molt orgullosos de la nostra col·laboració amb @casabaltar! Autèntic 'Dulce de Leche' artesanal elaborat amb llet fresca de pastura de Galícia.",
+      es: "🍨 ¡Muy orgullosos de nuestra colaboración con @casabaltar! Auténtico 'Dulce de Leche' artesanal elaborado con leche fresca de pasto de Galicia."
+    },
+    tag: {
+      ca: "Col·laboració Casa Baltar",
+      es: "Colaboración Casa Baltar"
+    },
+    likes: 275,
+    comments: 21,
+    date: {
+      ca: "Juliol 2026",
+      es: "Julio 2026"
+    }
+  },
+  {
+    id: "mascarpone-amarena",
+    url: "https://www.instagram.com/gelateria.al.bacio.es/",
+    image: "/images/instagram/post_6.jpg",
+    caption: {
+      ca: "🍒 Mascarpone fresc vellutat i cireres silvestres amarena: el clàssic que mai falla a la nostra vitrina.",
+      es: "🍒 Mascarpone fresco aterciopelado y cerezas silvestres amarena: el clásico que nunca falla en nuestra vitrina."
+    },
+    tag: {
+      ca: "Tradició Italiana",
+      es: "Tradición Italiana"
+    },
+    likes: 198,
+    comments: 13,
+    date: {
+      ca: "Juny 2026",
+      es: "Junio 2026"
+    }
+  },
+  {
+    id: "caffe-especialitat",
+    url: "https://www.instagram.com/gelateria.al.bacio.es/",
+    image: "/images/instagram/post_7.jpg",
+    caption: {
+      ca: "☕ Cafè espresso d'especialitat infusionat directament en el nostre mantecat: intensitat, aroma i cremositat a la terrassa d'Al Bacio.",
+      es: "☕ Café espresso de especialidad infusionado directamente en nuestro mantecado: intensidad, aroma y cremosidad en la terraza de Al Bacio."
+    },
+    tag: {
+      ca: "Cafè d'Especialitat",
+      es: "Café de Especialidad"
+    },
+    likes: 187,
+    comments: 11,
     date: {
       ca: "Maig 2026",
       es: "Mayo 2026"
     }
   },
   {
-    id: "C-aK__UNbXg",
-    url: "https://www.instagram.com/p/C-aK__UNbXg/",
-    image: "/images/gelato/instagram_4.jpg",
+    id: "crema-oreo",
+    url: "https://www.instagram.com/gelateria.al.bacio.es/",
+    image: "/images/instagram/post_8.jpg",
     caption: {
-      ca: "☕ Gelat artesanal italià, cafè d'especialitat, orxata, granissats i terrassa a l'Av. de la Música, 12 a Bunyol.",
-      es: "☕ Helado artesanal italiano, café de especialidad, horchata, granizados y terraza en Av. de la Música, 12 en Buñol."
+      ca: "🍪 Crema artesana suau amb abundants trossos de galeta Oreo cruixent. Un dels favorits indiscutibles de xiquets i adults a Bunyol!",
+      es: "🍪 Crema artesana suave con abundantes trozos de galleta Oreo crujiente. ¡Uno de los favoritos indiscutibles de niños y adultos en Buñol!"
     },
     tag: {
-      ca: "Terrassa a Bunyol",
-      es: "Terraza en Buñol"
+      ca: "Especials d'Obrador",
+      es: "Especiales del Obrador"
     },
+    likes: 256,
+    comments: 18,
     date: {
-      ca: "Juny 2026",
-      es: "Junio 2026"
+      ca: "Maig 2026",
+      es: "Mayo 2026"
     }
   }
 ];
