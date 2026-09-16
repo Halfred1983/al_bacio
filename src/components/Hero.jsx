@@ -67,7 +67,7 @@ export default function Hero({ lang, t }) {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-sm sm:text-base md:text-lg text-cream-100/95 max-w-xl font-light leading-relaxed mb-8 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+        <p className="text-base sm:text-lg md:text-xl text-cream-100 max-w-2xl font-normal leading-relaxed mb-8 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
           {t.hero.subtitle}
         </p>
 

@@ -68,16 +68,16 @@ export default function About({ lang, t }) {
             <div className="w-20 h-0.5 bg-caramel-500 mb-6 rounded-full" />
 
             {/* Concise text */}
-            <p className="text-sm sm:text-base text-cacao-700 font-light leading-relaxed mb-6 max-w-lg">
+            <p className="text-base sm:text-lg text-cacao-800 font-normal leading-relaxed mb-6 max-w-xl">
               {t.about.description}
             </p>
 
             {/* Quote with the requested slogan */}
-            <div className="p-4 sm:p-5 rounded-2xl bg-cream-100/70 border-l-4 border-terracotta-500 mb-8 max-w-lg">
-              <p className="font-serif italic text-base sm:text-lg text-cacao-900 mb-1">
+            <div className="p-5 sm:p-6 rounded-2xl bg-cream-100/80 border-l-4 border-terracotta-500 mb-8 max-w-xl">
+              <p className="font-serif italic text-lg sm:text-xl text-cacao-900 mb-2 leading-snug">
                 "{t.about.quote}"
               </p>
-              <span className="text-xs font-bold uppercase tracking-wider text-cacao-600">
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-cacao-700">
                 {t.about.author}
               </span>
             </div>

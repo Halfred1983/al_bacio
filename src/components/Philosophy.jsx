@@ -26,18 +26,18 @@ export default function Philosophy({ lang, t }) {
             {/* Separator */}
             <div className="w-20 h-0.5 bg-caramel-500 mb-6 rounded-full" />
 
-            <p className="text-sm sm:text-base text-cacao-700 font-light leading-relaxed mb-6 max-w-lg">
+            <p className="text-base sm:text-lg text-cacao-800 font-normal leading-relaxed mb-6 max-w-xl">
               {t.craft.description}
             </p>
 
             {/* Feature List */}
             <div className="space-y-3 mb-8 w-full max-w-md text-left">
               {t.craft.features.map((feat, index) => (
-                <div key={index} className="flex items-center space-x-3 bg-white p-3 rounded-2xl border border-cream-200 shadow-2xs">
-                  <div className="w-6 h-6 rounded-full bg-pistachio-100 flex items-center justify-center shrink-0">
-                    <Check className="w-3.5 h-3.5 text-pistachio-600 stroke-[3]" />
+                <div key={index} className="flex items-center space-x-3.5 bg-white p-3.5 rounded-2xl border border-cream-200 shadow-2xs">
+                  <div className="w-7 h-7 rounded-full bg-pistachio-100 flex items-center justify-center shrink-0">
+                    <Check className="w-4 h-4 text-pistachio-600 stroke-[3]" />
                   </div>
-                  <span className="text-xs sm:text-sm font-medium text-cacao-800">
+                  <span className="text-sm sm:text-base font-medium text-cacao-900">
                     {feat}
                   </span>
                 </div>

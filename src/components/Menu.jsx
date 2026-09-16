@@ -42,7 +42,7 @@ export default function Menu({ lang, t }) {
             {t.menu.title}
           </h2>
           <div className="w-16 h-0.5 bg-caramel-500 mx-auto mb-4 rounded-full" />
-          <p className="text-sm sm:text-base text-cacao-600 font-light">
+          <p className="text-base sm:text-lg text-cacao-700 font-light leading-relaxed">
             {t.menu.subtitle}
           </p>
         </div>
@@ -53,7 +53,7 @@ export default function Menu({ lang, t }) {
             <button
               key={cat.id}
               onClick={() => setActiveCategory(cat.id)}
-              className={`px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider whitespace-nowrap transition-all ${
+              className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider whitespace-nowrap transition-all ${
                 activeCategory === cat.id
                   ? 'bg-cacao-900 text-white shadow-sm'
                   : 'bg-cream-100 text-cacao-700 hover:bg-cream-200'
@@ -89,10 +89,10 @@ export default function Menu({ lang, t }) {
               {/* Minimal Text Content */}
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="font-serif text-xl font-bold text-cacao-900 mb-2 group-hover:text-terracotta-600 transition-colors">
+                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-cacao-900 mb-2.5 group-hover:text-terracotta-600 transition-colors">
                     {product.name[lang]}
                   </h3>
-                  <p className="text-xs sm:text-sm text-cacao-700 font-light leading-relaxed">
+                  <p className="text-sm sm:text-base text-cacao-700 font-normal leading-relaxed">
                     {product.desc[lang]}
                   </p>
                 </div>

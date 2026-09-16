@@ -91,7 +91,7 @@ export default function LocationHours({ lang, t }) {
                 <MapPin className="w-5 h-5 text-terracotta-500" />
                 <h3 className="font-serif text-lg font-bold">{t.location.addressLabel}</h3>
               </div>
-              <p className="text-sm text-cacao-700 leading-relaxed font-light mb-3">
+              <p className="text-base text-cacao-800 leading-relaxed mb-3 font-normal">
                 {t.location.address}
               </p>
               <a
@@ -111,7 +111,7 @@ export default function LocationHours({ lang, t }) {
                 <Clock className="w-5 h-5 text-caramel-500" />
                 <h3 className="font-serif text-lg font-bold">{t.location.hoursLabel}</h3>
               </div>
-              <div className="space-y-1.5 text-xs sm:text-sm">
+              <div className="space-y-2 text-sm sm:text-base">
                 {t.location.schedule.map((item, idx) => (
                   <div key={idx} className="flex justify-between items-center py-1 border-b border-cream-100 last:border-0">
                     <span className="text-cacao-700 font-medium">{item.days}</span>

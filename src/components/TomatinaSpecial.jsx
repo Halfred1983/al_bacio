@@ -78,10 +78,10 @@ export default function TomatinaSpecial({ lang, t }) {
               <div className="absolute inset-0 bg-gradient-to-t from-cacao-900/95 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-cacao-900/90 opacity-90" />
               
               <div className="absolute bottom-5 left-5 right-5 sm:bottom-6 sm:left-6">
-                <span className="inline-block bg-tomatina-500 text-white text-[10px] sm:text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow mb-2">
+                <span className="inline-block bg-tomatina-500 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow mb-2">
                   {lang === 'ca' ? 'Al Bacio · Bunyol' : 'Al Bacio · Buñol'}
                 </span>
-                <p className="text-xs sm:text-sm text-cream-100 font-medium">
+                <p className="text-sm sm:text-base text-cream-100 font-medium leading-snug">
                   {t.tomatina.photoDiegoCaption}
                 </p>
               </div>
@@ -90,14 +90,14 @@ export default function TomatinaSpecial({ lang, t }) {
             {/* Right: The 3-Act Story & Stats */}
             <div className="lg:col-span-7 p-6 sm:p-10 lg:p-12 flex flex-col justify-between text-left">
               <div>
-                <span className="text-xs font-bold uppercase tracking-[0.25em] text-caramel-400 block mb-2">
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-caramel-400 block mb-2">
                   {t.tomatina.storyTitle}
                 </span>
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-cream-50 mb-6">
+                <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-cream-50 mb-6">
                   "{t.tomatina.tagline}"
                 </h3>
 
-                <div className="space-y-4 text-xs sm:text-sm text-cream-200/90 font-light leading-relaxed mb-8">
+                <div className="space-y-5 text-base sm:text-lg text-cream-100 font-normal leading-relaxed mb-8">
                   <p>{t.tomatina.storyP1}</p>
                   <p>{t.tomatina.storyP2}</p>
                   <p>{t.tomatina.storyP3}</p>
@@ -112,7 +112,7 @@ export default function TomatinaSpecial({ lang, t }) {
                       <div className="font-serif text-xl sm:text-2xl font-bold text-tomatina-400 mb-0.5">
                         {stat.value}
                       </div>
-                      <div className="text-[10px] sm:text-[11px] text-cream-300/80 leading-tight">
+                      <div className="text-xs sm:text-sm text-cream-200 font-medium leading-tight">
                         {stat.label}
                       </div>
                     </div>
@@ -128,10 +128,10 @@ export default function TomatinaSpecial({ lang, t }) {
         {/* Video Reports Section */}
         <div className="mb-16 sm:mb-20">
           <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-            <span className="text-xs font-bold uppercase tracking-[0.25em] text-terracotta-400 block mb-1">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-terracotta-400 block mb-1">
               {t.tomatina.videoTitle}
             </span>
-            <p className="text-sm text-cream-300 font-light">
+            <p className="text-base sm:text-lg text-cream-200 font-light">
               {t.tomatina.videoSubtitle}
             </p>
           </div>
@@ -174,15 +174,15 @@ export default function TomatinaSpecial({ lang, t }) {
                 {/* Content */}
                 <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between">
                   <div>
-                    <span className="text-[11px] font-semibold text-caramel-400 uppercase tracking-wider block mb-1">
+                    <span className="text-xs font-semibold text-caramel-400 uppercase tracking-wider block mb-1">
                       {typeof video.channel === 'object' ? video.channel[lang] : video.channel}
                     </span>
-                    <h4 className="font-serif text-lg font-bold text-cream-50 group-hover:text-tomatina-400 transition-colors">
+                    <h4 className="font-serif text-lg sm:text-xl font-bold text-cream-50 group-hover:text-tomatina-400 transition-colors">
                       {video.title[lang]}
                     </h4>
                   </div>
 
-                  <div className="mt-4 pt-3 border-t border-cacao-700/60 flex items-center justify-between text-xs font-semibold text-cream-300 group-hover:text-white">
+                  <div className="mt-4 pt-3 border-t border-cacao-700/60 flex items-center justify-between text-xs sm:text-sm font-semibold text-cream-200 group-hover:text-white">
                     <span>{t.tomatina.watchVideo}</span>
                     <ExternalLink className="w-4 h-4 text-tomatina-400" />
                   </div>
@@ -195,10 +195,10 @@ export default function TomatinaSpecial({ lang, t }) {
         {/* Press Articles & Quotes Grid */}
         <div className="mb-16">
           <div className="text-center max-w-2xl mx-auto mb-10">
-            <span className="text-xs font-bold uppercase tracking-[0.25em] text-terracotta-400 block mb-1">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-terracotta-400 block mb-1">
               {t.tomatina.pressTitle}
             </span>
-            <p className="text-sm text-cream-300 font-light">
+            <p className="text-base sm:text-lg text-cream-200 font-light">
               {t.tomatina.pressSubtitle}
             </p>
           </div>
@@ -217,16 +217,16 @@ export default function TomatinaSpecial({ lang, t }) {
                     <span className="text-xs font-bold uppercase tracking-wider text-tomatina-400">
                       {typeof article.outlet === 'object' ? article.outlet[lang] : article.outlet}
                     </span>
-                    <span className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-cacao-700/80 text-cream-300">
+                    <span className="text-xs uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-cacao-700/80 text-cream-200 font-medium">
                       {typeof article.tag === 'object' ? article.tag[lang] : article.tag}
                     </span>
                   </div>
 
-                  <p className="font-serif italic text-sm sm:text-base text-cream-100 font-light leading-relaxed mb-4 group-hover:text-cream-50">
-                    {article.quote[lang]}
+                  <p className="font-serif italic text-base sm:text-lg text-cream-100 font-normal leading-relaxed mb-4 group-hover:text-white">
+                    "{article.quote[lang]}"
                   </p>
 
-                  <h4 className="text-xs text-cream-300 font-light leading-snug line-clamp-2">
+                  <h4 className="text-sm text-cream-200 font-light leading-snug line-clamp-2">
                     {article.headline[lang]}
                   </h4>
                 </div>
