@@ -9,6 +9,7 @@ export default function Menu({ lang, t }) {
 
   const allCategoryDefs = [
     { id: 'all', label: t.menu.all },
+    { id: 'hivern', label: t.menu.categories.hivern },
     { id: 'cremes', label: t.menu.categories.cremes },
     { id: 'especials', label: t.menu.categories.especials },
     { id: 'sorbets', label: t.menu.categories.sorbets },
@@ -72,7 +73,7 @@ export default function Menu({ lang, t }) {
               className="group bg-cream-50/60 rounded-3xl overflow-hidden border border-cream-200/90 hover:shadow-xl transition-all duration-500 flex flex-col"
             >
               {/* Large Image */}
-              <div className="aspect-[4/3] overflow-hidden bg-cream-100 card-zoom relative">
+              <div className="aspect-[3/4] overflow-hidden bg-cream-100 card-zoom relative">
                 <img
                   src={product.image}
                   alt={product.name[lang]}

@@ -177,6 +177,66 @@ export const products = [
       ca: "Cremós & Suau",
       es: "Cremoso & Suave"
     }
+  },
+
+  // 10. CREPES ARTESANES (ESPECIAL D'HIVERN)
+  {
+    id: "crepes",
+    category: "hivern",
+    name: {
+      ca: "Crepes Artesanes amb Gelat",
+      es: "Crepes Artesanales con Helado"
+    },
+    desc: {
+      ca: "Massa fina i daurada elaborada al moment a la planxa, cruixent per les vores i tendra per dins. Corona-la amb la nostra crema pura de pistatxo i festucs picats, Nutella o dulce de leche Casa Baltar, i acompanya-la d'una bola del nostre gelato artesà.",
+      es: "Masa fina y dorada elaborada al momento a la plancha, crujiente en los bordes y tierna por dentro. Corónala con nuestra crema pura de pistacho y pistachos picados, Nutella o dulce de leche Casa Baltar, y acompáñala de una bola de nuestro gelato artesano."
+    },
+    dietary: ["fetAlMoment"],
+    image: "/images/gelato/crepes.jpg",
+    badge: {
+      ca: "Especial d'Hivern",
+      es: "Especial de Invierno"
+    }
+  },
+
+  // 11. XURROS AMB XOCOLATA CALENTA (ESPECIAL D'HIVERN)
+  {
+    id: "churros-chocolate",
+    category: "hivern",
+    name: {
+      ca: "Xurros amb Xocolata Calenta",
+      es: "Churros con Chocolate Caliente"
+    },
+    desc: {
+      ca: "Xurros daurats, cruixents i acabats de fer, empolvorats amb sucre llustre i acompanyats d'una tassa de xocolata calenta espessa, cremosa i reconfortant. El clàssic més dolç per a les vesprades d'hivern a Bunyol.",
+      es: "Churros dorados, crujientes y recién hechos, espolvoreados con azúcar glas y acompañados de una taza de chocolate caliente espeso, cremoso y reconfortante. El clásico más dulce para las tardes de invierno en Buñol."
+    },
+    dietary: ["fetAlMoment"],
+    image: "/images/gelato/churros_chocolate.jpg",
+    badge: {
+      ca: "Especial d'Hivern",
+      es: "Especial de Invierno"
+    }
+  },
+
+  // 12. CHAI LATTE ESPECIAT (ESPECIAL D'HIVERN)
+  {
+    id: "chai-latte",
+    category: "hivern",
+    name: {
+      ca: "Chai Latte Especiat & Cremós",
+      es: "Chai Latte Especiado & Cremoso"
+    },
+    desc: {
+      ca: "Infusió aromàtica de te i espècies exòtiques —canyella en branca, cardamom verd, anís estrellat i clau— emulsionada amb llet calenta vellutada i coronada amb escuma cremosa i canyella molta.",
+      es: "Infusión aromática de té y especias exóticas —canela en rama, cardamomo verde, anís estrellado y clavo— emulsionada con leche caliente aterciopelada y coronada con espuma cremosa y canela molida."
+    },
+    dietary: ["senseGluten", "fetAlMoment"],
+    image: "/images/gelato/chai_latte.jpg",
+    badge: {
+      ca: "Especial d'Hivern",
+      es: "Especial de Invierno"
+    }
   }
 ];
 

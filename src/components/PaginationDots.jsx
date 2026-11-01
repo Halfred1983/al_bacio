@@ -7,6 +7,7 @@ export default function PaginationDots({ t }) {
     { id: 'inici', label: t.nav.home },
     { id: 'historia', label: t.nav.story },
     { id: 'filosofia', label: t.nav.craft },
+    { id: 'hivern', label: t.nav.winter },
     { id: 'gelats', label: t.nav.flavors },
     { id: 'tomatina', label: t.nav.tomatina },
     { id: 'on-som', label: t.nav.visit },

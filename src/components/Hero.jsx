@@ -81,6 +81,13 @@ export default function Hero({ lang, t }) {
             <ArrowRight className="w-4 h-4" />
           </a>
           <a
+            href="#hivern"
+            className="inline-flex items-center space-x-2 bg-caramel-500/90 hover:bg-caramel-500 text-cacao-900 px-8 py-3.5 sm:py-4 rounded-full text-xs font-bold uppercase tracking-[0.2em] shadow-lg hover:scale-105 active:scale-95 transition-all"
+          >
+            <Sparkles className="w-4 h-4" />
+            <span>{t.hero.winterBtn}</span>
+          </a>
+          <a
             href="#historia"
             className="inline-flex items-center space-x-2 bg-black/25 hover:bg-black/40 backdrop-blur-md border border-white/50 text-white px-8 py-3.5 sm:py-4 rounded-full text-xs font-bold uppercase tracking-[0.2em] shadow-md hover:scale-105 active:scale-95 transition-all"
           >

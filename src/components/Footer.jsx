@@ -41,6 +41,7 @@ export default function Footer({ t, lang }) {
           <a href="#inici" className="hover:text-white transition-colors">{t.nav.home}</a>
           <a href="#historia" className="hover:text-white transition-colors">{t.nav.story}</a>
           <a href="#filosofia" className="hover:text-white transition-colors">{t.nav.craft}</a>
+          <a href="#hivern" className="hover:text-white transition-colors">{t.nav.winter}</a>
           <a href="#gelats" className="hover:text-white transition-colors">{t.nav.flavors}</a>
           <a href="#tomatina" className="hover:text-white transition-colors">{t.nav.tomatina}</a>
           <a href="#on-som" className="hover:text-white transition-colors">{t.nav.visit}</a>

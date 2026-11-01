@@ -5,6 +5,7 @@ import PaginationDots from './components/PaginationDots';
 import Hero from './components/Hero';
 import About from './components/About';
 import Philosophy from './components/Philosophy';
+import WinterSpecial from './components/WinterSpecial';
 import Menu from './components/Menu';
 import TomatinaSpecial from './components/TomatinaSpecial';
 import LocationHours from './components/LocationHours';
@@ -33,6 +34,7 @@ export default function App() {
         <Hero lang={lang} t={t} />
         <About lang={lang} t={t} />
         <Philosophy lang={lang} t={t} />
+        <WinterSpecial lang={lang} t={t} />
         <Menu lang={lang} t={t} />
         <TomatinaSpecial lang={lang} t={t} />
         <LocationHours lang={lang} t={t} />

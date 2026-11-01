@@ -17,6 +17,7 @@ export default function Navbar({ lang, setLang, t }) {
     { href: '#inici', label: t.nav.home },
     { href: '#historia', label: t.nav.story },
     { href: '#filosofia', label: t.nav.craft },
+    { href: '#hivern', label: t.nav.winter },
     { href: '#gelats', label: t.nav.flavors },
     { href: '#tomatina', label: t.nav.tomatina },
     { href: '#on-som', label: t.nav.visit },

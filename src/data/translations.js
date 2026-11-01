@@ -5,6 +5,7 @@ export const translations = {
       home: "Inici",
       story: "Història",
       craft: "Filosofia",
+      winter: "Especial d'Hivern",
       flavors: "Els Gelats",
       tomatina: "La Tomatina",
       instagram: "Instagram",
@@ -13,9 +14,11 @@ export const translations = {
     },
     hero: {
       badge: "Gelateria Artigianale · Bunyol",
-      subtitle: "Un racó a Bunyol per a gaudir de l'autèntic gelato italià mantecat cada dia.",
+      winterPill: "Nou Especial d'Hivern · Crepes, Xurros amb Xocolata & Chai Latte",
+      subtitle: "Un racó a Bunyol per a gaudir de l'autèntic gelato italià mantecat cada dia i les nostres especialitats calentes d'hivern.",
       slogan: "Al Bacio significa fet amb mestria i perfecció.",
       exploreBtn: "Veure els Gelats",
+      winterBtn: "Especial d'Hivern",
       scrollDown: "Descobreix més",
     },
     about: {
@@ -44,10 +47,11 @@ export const translations = {
     },
     menu: {
       badge: "La Vitrina",
-      title: "Els Nostres Gelats",
-      subtitle: "Mantecats cada dia a l'Avinguda de la Música, 12.",
+      title: "Els Nostres Gelats & Especialitats",
+      subtitle: "Mantecats i elaborats cada dia a l'Avinguda de la Música, 12.",
       all: "Tots",
       categories: {
+        hivern: "Especial d'Hivern",
         cremes: "Cremes Clàssiques",
         sorbets: "Sorbets de Fruita",
         senseSucre: "Sense Sucre Afegit",
@@ -60,8 +64,47 @@ export const translations = {
         vegat: "100% Vegà",
         senseSucre: "Sense Sucre Afegit",
         proximitat: "Col·laboració Artesanal",
+        fetAlMoment: "Fet al Moment",
       },
       servingNote: "Disponibles en cucurutxo artesà cruixent, tarrina o envasos isotèrmics per a emportar a casa.",
+    },
+    winter: {
+      badge: "Especial d'Hivern · Tardor & Hivern a Bunyol",
+      title: "Calidesa artesana per als dies de fred",
+      subtitle: "Quan baixa la temperatura a Bunyol, el nostre obrador s'ompli d'aromes càlids i reconfortants: crepes fetes al moment, xurros daurats amb xocolata calenta espessa i el nostre aromàtic Chai Latte especiat.",
+      pairingBadge: "La Merenda Perfecta a Al Bacio",
+      pairingTitle: "Fet al moment, per a gaudir ben calentet",
+      pairingText: "Totes les nostres especialitats d'hivern s'elaboren al moment i es poden combinar amb qualsevol bola de gelato artesà de la nostra vitrina.",
+      ctaButton: "Vine a berenar a Bunyol",
+      items: [
+        {
+          id: "crepes-winter",
+          name: "Crepes Artesanes amb Gelat",
+          badge: "Fetes al Moment",
+          highlight: "Crema de Pistatxo · Xocolata · Bola de Gelato",
+          desc: "Massa fina i daurada elaborada al moment a la planxa, cruixent per les vores i tendra per dins. Corona-la amb la nostra crema pura de pistatxo i festucs picats, Nutella o dulce de leche Casa Baltar, acompanyada d'una bola del nostre gelato artesà.",
+          image: "/images/gelato/crepes.jpg",
+          tags: ["Fetes al Moment", "Amb Gelato Artesà"]
+        },
+        {
+          id: "churros-winter",
+          name: "Xurros amb Xocolata Calenta",
+          badge: "Tradició d'Hivern",
+          highlight: "Xocolata Espessa · Acabats de Fer",
+          desc: "Xurros daurats, cruixents i acabats de fer, empolvorats amb un toc de sucre llustre i acompanyats d'una tassa de xocolata calenta espessa, cremosa i reconfortant. El clàssic més dolç per a les vesprades d'hivern.",
+          image: "/images/gelato/churros_chocolate.jpg",
+          tags: ["Xocolata Calenta", "Cruixents"]
+        },
+        {
+          id: "chai-latte-winter",
+          name: "Chai Latte Especiat",
+          badge: "Especiat · Cremós · Aromàtic",
+          highlight: "Canyella · Cardamom · Anís Estrellat · Clau",
+          desc: "Infusió aromàtica de te i espècies exòtiques —canyella en branca, cardamom verd, anís estrellat i clau— emulsionada amb llet calenta vellutada i coronada amb una generosa capa d'escuma cremosa i canyella molta.",
+          image: "/images/gelato/chai_latte.jpg",
+          tags: ["Sense Gluten", "100% Aromàtic"]
+        }
+      ]
     },
     tomatina: {
       badge: "Edició Especial Bunyol · Fenomen als Mitjans",
@@ -158,6 +201,7 @@ export const translations = {
       home: "Inicio",
       story: "Historia",
       craft: "Filosofía",
+      winter: "Especial Invierno",
       flavors: "Los Helados",
       tomatina: "La Tomatina",
       instagram: "Instagram",
@@ -166,9 +210,11 @@ export const translations = {
     },
     hero: {
       badge: "Gelateria Artigianale · Buñol",
-      subtitle: "Un rincón en Buñol para disfrutar del auténtico gelato italiano mantecado cada día.",
+      winterPill: "Nuevo Especial de Invierno · Crepes, Churros con Chocolate & Chai Latte",
+      subtitle: "Un rincón en Buñol para disfrutar del auténtico gelato italiano mantecado cada día y nuestras especialidades calientes de invierno.",
       slogan: "Al Bacio significa hecho con maestría y perfección.",
       exploreBtn: "Ver los Helados",
+      winterBtn: "Especial de Invierno",
       scrollDown: "Descubre más",
     },
     about: {
@@ -197,10 +243,11 @@ export const translations = {
     },
     menu: {
       badge: "La Vitrina",
-      title: "Nuestros Helados",
-      subtitle: "Mantecados cada día en Avenida de la Música, 12.",
+      title: "Nuestros Helados & Especialidades",
+      subtitle: "Mantecados y elaborados cada día en Avenida de la Música, 12.",
       all: "Todos",
       categories: {
+        hivern: "Especial de Invierno",
         cremes: "Cremas Clásicas",
         sorbets: "Sorbetes de Fruta",
         senseSucre: "Sin Azúcar Añadido",
@@ -213,8 +260,47 @@ export const translations = {
         vegat: "100% Vegano",
         senseSucre: "Sin Azúcar Añadido",
         proximitat: "Colaboración Artesanal",
+        fetAlMoment: "Hecho al Momento",
       },
       servingNote: "Disponibles en cucurucho artesano crujiente, tarrina o envases isotérmicos para llevar a casa.",
+    },
+    winter: {
+      badge: "Especial de Invierno · Otoño & Invierno en Buñol",
+      title: "Calidez artesana para los días de frío",
+      subtitle: "Cuando baja la temperatura en Buñol, nuestro obrador se llena de aromas cálidos y reconfortantes: crepes hechas al momento, churros dorados con chocolate caliente espeso y nuestro aromático Chai Latte especiado.",
+      pairingBadge: "La Merienda Perfecta en Al Bacio",
+      pairingTitle: "Hecho al momento, para disfrutar bien calentito",
+      pairingText: "Todas nuestras especialidades de invierno se elaboran al momento y pueden combinarse con cualquier bola de gelato artesano de nuestra vitrina.",
+      ctaButton: "Ven a merendar en Buñol",
+      items: [
+        {
+          id: "crepes-winter",
+          name: "Crepes Artesanales con Helado",
+          badge: "Hechas al Momento",
+          highlight: "Crema de Pistacho · Chocolate · Bola de Gelato",
+          desc: "Masa fina y dorada elaborada al momento a la plancha, crujiente en los bordes y tierna por dentro. Corónala con nuestra crema pura de pistacho y pistachos picados, Nutella o dulce de leche Casa Baltar, acompañada de una bola de nuestro gelato artesano.",
+          image: "/images/gelato/crepes.jpg",
+          tags: ["Hechas al Momento", "Con Gelato Artesano"]
+        },
+        {
+          id: "churros-winter",
+          name: "Churros con Chocolate Caliente",
+          badge: "Tradición de Invierno",
+          highlight: "Chocolate Espeso · Recién Hechos",
+          desc: "Churros dorados, crujientes y recién hechos, espolvoreados con un toque de azúcar glas y acompañados de una taza de chocolate caliente espeso, cremoso y reconfortante. El clásico más dulce para las tardes de invierno.",
+          image: "/images/gelato/churros_chocolate.jpg",
+          tags: ["Chocolate Caliente", "Crujientes"]
+        },
+        {
+          id: "chai-latte-winter",
+          name: "Chai Latte Especiado",
+          badge: "Especiado · Cremoso · Aromático",
+          highlight: "Canela · Cardamomo · Anís Estrellado · Clavo",
+          desc: "Infusión aromática de té y especias exóticas —canela en rama, cardamomo verde, anís estrellado y clavo— emulsionada con leche caliente aterciopelada y coronada con una generosa capa de espuma cremosa y canela molida.",
+          image: "/images/gelato/chai_latte.jpg",
+          tags: ["Sin Gluten", "100% Aromático"]
+        }
+      ]
     },
     tomatina: {
       badge: "Edición Especial Buñol · Fenómeno en Medios",

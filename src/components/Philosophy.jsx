@@ -96,7 +96,7 @@ export default function Philosophy({ lang, t }) {
 
       {/* Down arrow to next section */}
       <a
-        href="#gelats"
+        href="#hivern"
         className="absolute bottom-4 left-1/2 -translate-x-1/2 text-cacao-400 hover:text-terracotta-600 p-2 transition-colors"
         aria-label={lang === 'ca' ? 'Següent secció' : 'Siguiente sección'}
       >
