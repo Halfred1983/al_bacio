@@ -1,0 +1,39 @@
+{
+  "timezone": "Europe/Madrid",
+  "lastUpdated": "2026-11-25",
+  "source": "Google Maps",
+  "days": {
+    "Mon": [],
+    "Tue": [
+      {
+        "open": "09:00",
+        "close": "13:30"
+      }
+    ],
+    "Wed": [
+      {
+        "open": "09:00",
+        "close": "13:30"
+      }
+    ],
+    "Thu": [],
+    "Fri": [
+      {
+        "open": "17:00",
+        "close": "23:30"
+      }
+    ],
+    "Sat": [
+      {
+        "open": "17:00",
+        "close": "23:30"
+      }
+    ],
+    "Sun": [
+      {
+        "open": "17:00",
+        "close": "21:00"
+      }
+    ]
+  }
+}

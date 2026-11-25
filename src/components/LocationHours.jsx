@@ -1,45 +1,11 @@
 import React, { useMemo } from 'react';
 import { MapPin, Clock, Navigation, Phone, Mail, CheckCircle2 } from 'lucide-react';
+import { isShopOpenNow, getFormattedSchedule } from '../data/hoursUtils';
 
 export default function LocationHours({ lang, t }) {
-  // Check live if open or closed according to official Google Maps listing
-  const isOpenNow = useMemo(() => {
-    try {
-      const now = new Date();
-      const options = { timeZone: 'Europe/Madrid', hour12: false };
-      const day = now.toLocaleDateString('en-US', { ...options, weekday: 'short' });
-      const hour = parseInt(now.toLocaleTimeString('en-US', { ...options, hour: '2-digit' }), 10);
-      const min = parseInt(now.toLocaleTimeString('en-US', { ...options, minute: '2-digit' }), 10);
-      const currentMinutes = hour * 60 + min;
-
-      // Monday: Closed (Descanso semanal)
-      if (day === 'Mon') return false;
-
-      // Tuesday & Wednesday: 17:30 – 21:00
-      if (day === 'Tue' || day === 'Wed') {
-        return currentMinutes >= 1050 && currentMinutes < 1260;
-      }
-
-      // Thursday: 17:30 – 21:30
-      if (day === 'Thu') {
-        return currentMinutes >= 1050 && currentMinutes < 1290;
-      }
-
-      // Friday & Saturday: 17:30 – 00:00 (midnight)
-      if (day === 'Fri' || day === 'Sat') {
-        return currentMinutes >= 1050 && currentMinutes < 1440;
-      }
-
-      // Sunday: 17:30 – 21:00
-      if (day === 'Sun') {
-        return currentMinutes >= 1050 && currentMinutes < 1260;
-      }
-
-      return false;
-    } catch {
-      return true;
-    }
-  }, []);
+  // Check live if open or closed according to hours.json (synced from Google Maps)
+  const isOpenNow = useMemo(() => isShopOpenNow(), []);
+  const schedule = useMemo(() => getFormattedSchedule(lang), [lang]);
 
   const googleMapsUrl = "https://www.google.com/maps/search/?api=1&query=Avenida+de+la+M%C3%BAsica+12+46360+Bu%C3%B1ol+Valencia+Spain";
 
@@ -112,7 +78,7 @@ export default function LocationHours({ lang, t }) {
                 <h3 className="font-serif text-lg font-bold">{t.location.hoursLabel}</h3>
               </div>
               <div className="space-y-2 text-sm sm:text-base">
-                {t.location.schedule.map((item, idx) => (
+                {schedule.map((item, idx) => (
                   <div key={idx} className="flex justify-between items-center py-1 border-b border-cream-100 last:border-0">
                     <span className="text-cacao-700 font-medium">{item.days}</span>
                     <span className="text-cacao-900 font-bold">{item.hours}</span>
